@@ -1,0 +1,1031 @@
+/* Copyright 2020 - Alex Craig */
+
+
+/********************
+ *       FONTS      *
+ ********************/
+
+@font-face {
+    font-family: Nunito Sans;
+    font-display:swap;src: url( https://codecademy-discourse.s3.amazonaws.com/discuss/38bfbb2fedcb8d06f52e87fa77aad105.eot);
+    src: url( https://codecademy-discourse.s3.amazonaws.com/discuss/8f8fbcc4095c37401c638882bc63b21b.woff2) format("woff2"),url( https://codecademy-discourse.s3.amazonaws.com/discuss/521ab168c92451877ce6712a0db4f5e7.woff) format("woff"),url( https://codecademy-discourse.s3.amazonaws.com/discuss/8e98e9732a7b5fd7012ae3527c43b971.ttf) format("ttf");
+    font-weight: 400
+}
+
+@font-face {
+    font-family: Nunito Sans;
+    font-display:swap;src: url( https://codecademy-discourse.s3.amazonaws.com/discuss/71748a16292070f9f5e41ae77e10a9f4.eot);
+    src: url( https://codecademy-discourse.s3.amazonaws.com/discuss/10c6b3611734c6f586a233d41c1cdf46.woff2) format("woff2"),url( https://codecademy-discourse.s3.amazonaws.com/discuss/e3c2f4d640f19fdbf602b8bb4392f6af.woff) format("woff"),url( https://codecademy-discourse.s3.amazonaws.com/discuss/3ec73bbdc261ff37a3067e4ec8c09c10.ttf) format("ttf");
+    font-weight: 700
+}
+
+@font-face {
+    font-family: Regular Bold;
+    font-display:swap;src: url( https://codecademy-discourse.s3.amazonaws.com/discuss/28324c882a2d4c8be68b5f6ce9b39204.eot);
+    src: url( https://codecademy-discourse.s3.amazonaws.com/discuss/3861e7bced4765ac7456df8ec72e42d5.woff2) format("woff2"),url( https://codecademy-discourse.s3.amazonaws.com/discuss/565e47e2f3a53ea0244f2e298162bcca.woff) format("woff"),url( https://codecademy-discourse.s3.amazonaws.com/discuss/259392ba68211cadb5d389c1d6bc7123.svg) format("svg")
+}
+
+@font-face {
+    font-family: ikona;
+    src: url( https://codecademy-discourse.s3.amazonaws.com/discuss/8a35d397f9350b12bab3bb8cc4c0dfdd.eot);
+    src: url( https://codecademy-discourse.s3.amazonaws.com/discuss/1a57406d1a1670dad74ed36e37c3ed13.woff) format("woff"),url( https://codecademy-discourse.s3.amazonaws.com/discuss/bc6fce1981480ce868cc9e86d506e1c0.ttf) format("truetype")
+}
+
+@font-face {
+    font-family: Regular Patch;
+    src: url( https://codecademy-discourse.s3.amazonaws.com/discuss/71748a16292070f9f5e41ae77e10a9f4.eot);
+    src: url( https://codecademy-discourse.s3.amazonaws.com/discuss/10c6b3611734c6f586a233d41c1cdf46.woff2) format("woff2"),url( https://codecademy-discourse.s3.amazonaws.com/discuss/e3c2f4d640f19fdbf602b8bb4392f6af.woff) format("woff"),url( https://codecademy-discourse.s3.amazonaws.com/discuss/3ec73bbdc261ff37a3067e4ec8c09c10.ttf) format("ttf");
+    unicode-range: u+003c,u+003e
+}
+
+#banner #welcome-text, body {
+    font-family: Nunito Sans,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+}
+
+#banner h2, .fancy-title {
+    font-family: Regular Patch,Regular Bold,Nunito Sans,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+}
+
+.d-editor-input, .ember-text-area {
+	font-family: "Oxygen", Helvetica, Arial, sans-serif !important;
+}
+
+strong {
+    font-weight: bold;
+}
+
+
+/********************
+ *   BUTTON STYLES  *
+ ********************/
+
+#site-logo {
+	border-radius: 2px;
+	padding: 6px 16px;
+}
+
+.custom-header-links .headerLink a:focus,#site-logo:focus {
+	border-radius: 2px;
+	box-shadow: 0 0 0 2px #fff,0 0 0 4px #141c3a;
+	outline: none;
+}
+
+.login-button {
+	background-color: $quaternary;
+	border-color: transparent;
+	border-radius: 2px;
+}
+
+.login-button:active {
+	background-color: #5000b6;
+}
+
+.panel > .header-buttons > .login-button:focus {
+	background-color: $quaternary;
+	box-shadow: 0 0 0 2px #fff,0 0 0 4px $quaternary;
+	outline: none;
+}
+
+.panel > .header-buttons > .login-button:hover {
+	background-color: $quaternary;
+	box-shadow: 0 2px 4px rgba(0,0,0,.3);
+}
+
+
+/********************
+ *  HEADER STYLING  *
+ ********************/
+ 
+.d-header {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .1);
+    border-bottom: none;
+    padding: .65rem 0;
+}
+
+.d-header .header-buttons {
+    margin-right: 2rem;
+}
+
+.d-header-icons .d-icon {
+    color: #141c3a;
+    font-weight: 400;
+    padding: .2rem;
+    margin: 0 2rem 0 0;
+    border-radius: 2px;
+}
+
+.d-header-icons .icon:hover .d-icon,
+.d-header-icons .icon:focus .d-icon {
+    color: #141c3a;
+}
+
+.d-header-icons .icon,
+.d-header-icons .icon:active,
+.d-header-icons .icon:hover,
+.d-header-icons .icon:focus,
+.drop-down-mode .d-header-icons .active .icon {
+    background-color: initial;
+    border: none;
+    color: #141c3a;
+    font-weight: 400;
+    padding: .2rem;
+    margin: 0 2rem 0 0;
+    color: #141c3a;
+    font-weight: 400;
+    padding: .2rem;
+    margin: 0 2rem 0 0;
+}
+
+.d-header-icons .icon:focus .d-icon,
+.d-header-icons .icon:active .d-icon {
+    box-shadow: 0 0 0 2px #fff, 0 0 0 4px #141c3a;
+}
+
+.drop-down-mode .d-header-icons .active .icon .d-icon {
+    color: #141c3a;
+    box-shadow: 0 0 0 2px #fff, 0 0 0 4px #141c3a;
+}
+
+.timeline-container:not(.timeline-docked) {
+    top: 68px !important;
+}
+
+
+.timeline-container {
+    z-index: 1;
+}
+
+.header-buttons .custom-header-links .headerLink a {
+    color: #141c3a;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+/********************
+ * COMMUNITY BANNER *
+ ********************/
+
+#main-outlet .container:first-of-type .row {
+    display: none;
+}
+
+#main-outlet {
+    padding-top: 0;
+}
+
+#main-outlet div.container:first-of-type {
+    max-width: none;
+    padding-left: 0;
+    padding-right: 0;
+    display: block;
+}
+
+.category-header #main-outlet {
+    padding-top: 0 !important;
+}
+
+#ember12 {
+    display: block !important;
+}
+
+#banner {
+    background-color: #141C3A;
+    width: initial;
+    max-width: none;
+    color: white;
+    font-family: Regular Patch, Regular Bold, Nunito Sans, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+#banner a {
+    font-weight: bold;
+}
+
+#banner #welcome-text h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+#banner #welcome-text,
+#banner #welcome-resources {
+    padding: 2rem;
+    flex: 1 1;
+    float: none;
+    width: auto;
+    font-family: Nunito Sans;
+    font-weight: normal;
+    font-size: 19px;
+}
+
+#ember11 {
+    padding: 0;
+}
+
+#welcome-message,
+#circle-img-welcome {
+    z-index: 2;
+}
+
+#welcome-message {
+    max-width: 1440px;
+    margin: 0 auto;
+    width: 100% !important;
+    float: none !important;
+    display: flex;
+    align-items: center;
+}
+
+.swoopbr {
+    position: absolute;
+    z-index: -1;
+    bottom: -2rem;
+    right: -8rem;
+    width: 350px;
+}
+
+.swooptl {
+    position: absolute;
+    z-index: -1;
+    top: -2rem;
+    left: -8rem;
+}
+
+.category-header #main-outlet .container:first-of-type {
+    margin-top: 15px !important;
+}
+
+#banner svg {
+    position: absolute;
+    z-index: -1;
+}
+
+#svgLeft {
+    margin-left: -10px;
+}
+
+#svgRight {
+    right: 0;
+    bottom: 0;
+}
+
+#welcome-message a:link, #welcome-message a:hover, #welcome-message a:visited, #welcome-message a:active {
+    color: #59A1C9;
+}
+
+
+/********************
+ *    MAIN THEME    *
+ ********************/
+
+
+/* MAIN STYLING */
+body {
+    background: #F7F7F7 !important;
+}
+
+/* spinner */
+.spinner {
+    padding: 0 !important;
+}
+
+/* user card fix */
+#user-card {
+    padding: 0;
+}
+
+/* 404 page */
+.page-not-found {
+    margin-top: 85px;
+}
+
+
+/* BANNER */
+#banner {
+    margin-bottom: 30px;
+}
+
+
+/* TOPIC PAGE */
+.topic-body {
+    border: none;
+    background: white;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 10px 0 rgba(0,0,0,.15);
+    margin-left: -45px;
+    padding-right: 15px;
+    padding-left: 55px;
+}
+
+.timeline-container .topic-timeline {
+    margin-top: 15px;
+}
+
+.topic-avatar {
+    border: none;
+}
+
+.topic-avatar > a, .topic-avatar > svg {
+    padding-left: 10px;
+}
+
+.topic-avatar > .placeholder-avatar {
+    margin-left: 10px;
+}
+
+tr, .latest-topic-list-item {
+    border-bottom: 4px solid #E9E9E9;
+}
+
+.post-notice {
+    max-width: calc(690px + 45px + 27px - 0.1em);
+    margin-bottom: 10px;
+}
+
+.suggested-topics table, .category-list, .latest-topic-list, .topic-list {
+    background: white;
+}
+
+.gap {
+    margin-bottom: 10px;
+}
+
+/* presence users */
+.presence-users {
+    background-color: #F7F7F7 !important;
+}
+
+/* make tables user's post look normal */
+.topic-body tr {
+    border-bottom: 1px solid #e9e9e9;
+}
+
+/* replies customisation */
+.embedded-posts.bottom, .embedded-posts.bottom .row .topic-avatar, .embedded-posts.bottom .row .topic-body {
+    border: none;
+}
+
+/* suggested topic fix */
+.suggested-topics .suggested-topics-title {
+    display: inherit;
+}
+
+/* TOPIC SIDE BAR */
+/* topic side bar */
+.timeline-container .topic-timeline .timeline-handle {
+    background-color: #141C3A; 
+}
+
+.timeline-container .topic-timeline .timeline-scrollarea {
+    border-color: #141C3A; 
+}
+
+/* topic modal */
+.modal-backdrop {
+    background: #111a;
+}
+
+#topic-progress {
+    height: 41px;
+}
+
+/* STAFF COLOUR */
+.moderator .topic-body {
+    background-color: #E7E4FF !important;
+}
+
+.moderator .clearfix>.topic-meta-data>.names span.user-title a {
+    background-color: inherit;
+}
+
+.moderator .regular>.cooked {
+    background-color: inherit !important;
+}
+
+/* HIGHLIGHTED TOPICS */
+body .highlighted {
+    animation: background-fade-highlight 2.5s ease-out;
+}
+
+@keyframes background-fade-highlight {
+  0% {
+    background-color: dark-light-diff($tertiary, $secondary, 85%, -65%);
+  }
+  100% {
+    background-color: #FFF;
+  }
+}
+
+body .moderator .highlighted {
+    animation: background-moderator-fade-highlight 2.5s ease-out;
+}
+
+@keyframes background-moderator-fade-highlight {
+  0% {
+    background-color: #FFF;
+  }
+  100% {
+    background-color: #E7E4FF;
+  }
+}
+
+
+/* CATEGORY PAGE */
+.category-box-inner {
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.15);
+    border: none !important;
+    background: #FFF;
+}
+
+.category-box-inner:hover {
+    box-shadow: -2px 8px 22px 0 rgba(0,0,0,.15);
+    transition: box-shadow .25s ease-in;
+}
+
+.category-boxes .category-box, .category-boxes-with-topics .category-box {
+    border-left-width: 0;
+    border-top-width: 6px;
+}
+
+.category-list .featured-topic {
+    margin-right: 10px;
+}
+
+/* move little blue dot */
+.read-state {
+    margin-right: 10px;
+}
+
+/* table color */
+.category-list td {
+    color: #151C3A !important;
+}
+
+/* table alignment */
+th.category span {
+    padding-left: 5px;
+}
+
+th.latest {
+    padding-left: 12px;
+}
+
+/* grid alignment */
+.category-boxes, .category-boxes-with-topics {
+    margin-left: -10px;
+    margin-right: -10px;
+    width: calc(100% + 20px);
+}
+
+.category-boxes-with-topics .category-box {
+    width: 23%;
+}
+
+/* category header banner */
+div[class^="category-title-header"] {
+    font-size: 17px;
+}
+
+div[class^="category-title-header"] img {
+    padding-left: 0 !important;
+    margin-left: -51px;
+}
+
+/* settings on category */
+#bulk-select {
+    background-color: inherit;
+}
+
+/* sub cat banner */
+a.mention, a.mention-group {
+    background: inherit;
+}
+
+
+/* LINK COLOURS */
+a:active, a,
+a.hashtag, a.mention,
+.menu-panel a:visited, .menu-panel a:hover, {
+    color: #3d65c2;  
+}
+
+a:hover, a:visited,
+a.hashtag:visited, a.hashtag:hover, 
+.cooked a:visited,
+.topic-list a.title.visited:not(.badge-notification),
+.topic-list a.title:visited:not(.badge-notification),
+aside.onebox .onebox-body a[href]:visited,
+a.mention:visited, a.mention:hover {
+    color: #225470;  
+}
+
+.topic-list-item.visited a.title:not(.badge-notification) {
+    color: #919191 !important;
+}
+
+
+/* PAGE STYLING */
+.user-main, .admin-content {
+    background: #FFF;
+    padding: 10px;
+}
+
+#user-card, #group-card {
+    border: 1px solid #CCC;
+}
+
+
+/* PROFILE PAGE */
+/* update name and badge colour */
+.names span a, .names .fa, .moderator .clearfix>.topic-meta-data>.names span.user-title {
+    color: black !important;
+}
+
+/* update list of badges */
+.badge-card.large .badge-contents, .badge-group-list .badge-contents {
+    background: white;
+}
+
+.badge-card.large, .badge-group-list .badge-card {
+    border: none;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.15);
+}
+
+
+/* BADGE PAGE */
+.user-info.medium {
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.15);
+    background: #FFF;
+}
+
+.user-info.medium .user-image {
+    padding: 10px 0 0 10px;
+}
+
+.badge-info.user-info.medium .user-detail {
+    padding-top: 10px;
+}
+
+
+/* ADMIN PAGE */
+.user-info.small {
+    width: 300px;
+    margin-right: 13px;
+    padding: 10px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.15);
+    background: white;
+}
+
+table.group-members .user-info.small.ember-view,
+.summary-user-list .user-info {
+    box-shadow: none;
+}
+
+
+/* FLAGS PAGE */
+.reviewable-item {
+    background: white;
+    padding: 15px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.15);
+    border: none;
+}
+
+
+/* MAIN FORUM BUTTON STYLING */
+.btn:hover, .btn[href]:hover {
+    color: #FFF;
+    background-color: #141C3A;
+}
+
+.btn:hover .d-icon {
+    color: #FFF;
+}
+
+.btn-primary {
+    background-color: #141C3A;
+}
+
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus {
+    background-color: #3D65C2;
+    background-image: none;
+    outline: none;
+}
+
+.d-editor-button-bar .btn:hover,
+.d-editor-button-bar .btn:hover .d-icon, {
+    color: inherit;
+    background-color:inherit;
+}
+
+.topic-admin-popup-menu .btn:hover,
+.topic-admin-popup-menu .btn:hover .d-icon,
+.post-admin-menu .btn:hover,
+.post-admin-menu .btn:hover .d-icon {
+    color: inherit;
+    background: #E9E9E9;
+    font-weight: bold;
+}
+
+.btn-danger[href]:hover, 
+.btn-danger:hover,
+.topic-admin-popup-menu .btn-danger:hover,
+.topic-admin-popup-menu .btn-danger:hover .d-icon {
+    color: #FFF;
+    background: #DE0306;
+}
+
+
+/* CHANGES FOR SMALL SCREENS */
+@media (max-width: 818px) {
+    .topic-body {
+        width: calc(100%);
+        box-sizing: border-box;
+    }
+    
+    div[class^="category-title-header"] img {
+        display: none;
+    }
+}
+
+
+/********************
+ *CONDITIONAL COMPS *
+ ********************/
+
+.hide-reply-quote button.widget-button.reply, .hide-reply-quote .quote-button {
+    display: none;
+}
+
+
+/********************
+ *      FOOTER      *
+ ********************/
+
+@import "common/foundation/variables";
+
+.custom-footer {
+  border-top: 1px solid #e9e9e9;
+  display: flex;
+  flex-wrap: wrap;
+  background: $secondary;
+  .flexbox {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    color: #646464;
+    padding: 1.5rem 0 0.75rem 0;
+    font-size: 1rem;
+  }
+  .second-box {
+    flex: 1;
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      ul {
+        list-style: none;
+        margin: 0;
+      }
+      li {
+        margin: 0.5em 0;
+      }
+      .subheader {
+          color: #646464;
+          font-weight: 700;
+          font-size: 0.875rem;
+      }
+    }
+  }
+  .third-box {
+    align-items: center;
+    border-top: 1px solid #e9e9e9;
+    padding-top: 0.75rem;
+    display: flex;
+    width: 100%;
+    .small-link {
+      color: #08c;
+      margin: 0 0.25em;
+    }
+    .copyright {
+      text-align: right;
+    }
+  }
+  .footer-links {
+    flex: 1;
+    min-width: 165px;
+    .divider {
+        font-size: 1.1rem;
+    }
+  }
+  .footer-section-link-wrapper a {
+    color: #3E3E40;
+    &:hover {
+        color: #4B77E0;
+    }
+  }
+  .list {
+    margin: 1em;
+    margin-top: 0;
+    span {
+      color: #000;
+      font-size: 1rem;
+    }
+    .social {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: flex-start;
+      .social-link {
+        margin-right: .5em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        i {
+          color: $secondary;
+          min-width: unset;
+          margin: 0;
+          font-size: $font-up-2;
+          opacity: 1;
+        }
+      }
+    }
+  }
+  .list-codecademy {
+    flex: 1;
+  }
+  .list-resources {
+    flex: 1;
+  }
+  .list-catalog {
+    flex: 1;
+  }    
+  .list-languages {
+    display: flex;
+    justify-content: space-around;
+    flex: 2;
+  }
+  .list-catalog2 {
+    order: 4;
+    // flex: 4;
+  }    
+  .list-catalog3 {
+    order: 5;
+    // flex: 2;
+  }
+  .d-icon {
+    color: #3e3e40;
+    margin-right: 5px;
+    opacity: 0.7;
+    min-width: 20px;
+    min-height: 20px;
+    text-align: center;
+    &.fa-none {
+      min-width: unset;
+    }
+    .rtl & {
+      margin-right: 0;
+      margin-left: 5px;
+    }
+  }
+  .hide-opacity {
+      opacity: 0;
+  }
+}
+
+#main-outlet {
+  flex: 1 0 auto;
+}
+
+@media screen and (max-width: 1120px) {
+  .custom-footer {
+    .first-box {
+      max-width: 100%;
+      border-bottom: 1px solid rgba($primary-low, 0.05);
+      margin-bottom: 1em;
+      padding-bottom: 1em;
+
+      .blurb {
+        display: flex;
+        align-items: center;
+      }
+    }
+    .third-box {
+      margin-top: 0.5em;
+    }
+    .second-box .links {
+    //   justify-content: space-between;
+    }
+    .list {
+      margin: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .custom-footer {
+    .first-box {
+      width: 100%;
+    }
+    .list {
+      margin-top: 1em;
+      display: inline-block;
+      vertical-align: top;
+    }
+    .links {
+      display: inline-block;
+    }
+    .list-codecademy {
+        order: 1;
+        min-width: 50%;
+    }
+    .list-resources {
+        order: 2;
+        min-width: 50%;
+    }
+    .list-catalog {
+        order: 3;
+        flex: 6;
+        min-width: 50%;
+
+    }    
+    .list-languages {
+        margin-top: 0;
+        order: 4;
+        flex: 6;
+        display: flex;
+        justify-content: space-between;
+        min-width: 50%;
+
+    }
+    .list-catalog2 {
+        order: 4;
+        flex: 4;
+    }    
+    .list-catalog3 {
+        order: 5;
+        flex: 2;
+    }
+  }
+}
+
+
+/********************
+ *   CATEGORY SVG   *
+ ********************/
+
+.category-boxes .category-box,
+.category-boxes-with-topics .category-box {
+  position: relative;
+}
+
+.category-boxes .category-box-inner:before,
+.category-boxes-with-topics .category-box-inner:before {
+  content: '';
+  position: absolute;
+  top: -6px;
+  right: 0;
+  width: 100px;
+  height: 35px;
+  background-repeat: no-repeat;
+  background-size: 100px 35px;
+}
+
+/* RED */
+.category-boxes .category-box-python .category-box-inner:before,
+.category-boxes .category-box-build-chatbots-with-python .category-box-inner:before,
+.category-boxes .category-box-Python-FAQ .category-box-inner:before,
+.category-boxes .category-box-build-chatbots-with-python-faq  .category-box-inner:before,
+.category-boxes-with-topics .category-box-getting-started .category-box-inner:before,
+.category-boxes-with-topics .category-box-Community-Organizers .category-box-inner:before,
+.category-boxes-with-topics .category-box-Meetups-and-Community-Events .category-box-inner:before {
+  background-image: url("https://codecademy-public-assets.s3.amazonaws.com/community/border/9fbd09402bf67787a65c85658c001295174b6680.svg");
+}
+
+/* BRAND PURPLE */
+.category-boxes .category-box-general-programming .category-box-inner:before,
+.category-boxes .category-box-codecademy .category-box-inner:before,
+.category-boxes .category-box-general-coding-FAQ .category-box-inner:before,
+.category-boxes .category-box-codecademy-faq .category-box-inner:before,
+.category-boxes .category-box-career-faq .category-box-inner:before,
+.category-boxes-with-topics .category-box-learn-from-home-club .category-box-inner:before,
+.category-boxes-with-topics .category-box-hq-announcements .category-box-inner:before,
+.category-boxes-with-topics .category-box-super-user-pro-lounge .category-box-inner:before {
+  background-image: url("https://codecademy-public-assets.s3.amazonaws.com/community/border/d2999f566307d4f87ca7b92c08231b7a77d39589.svg");
+}
+
+/* DARK BLUE */
+.category-boxes .category-box-html .category-box-inner:before,
+.category-boxes .category-box-css .category-box-inner:before,
+.category-boxes .category-box-sass .category-box-inner:before,
+.category-boxes .category-box-make-and-deploy-a-website .category-box-inner:before,
+.category-boxes .category-box-HTML-FAQ .category-box-inner:before,
+.category-boxes .category-box-CSS-FAQ .category-box-inner:before,
+.category-boxes .category-box-Sass-FAQ .category-box-inner:before,
+.category-boxes .category-box-make-and-deploy-a-website-FAQ .category-box-inner:before,
+.category-boxes-with-topics .category-box-careers-journeys-stories .category-box-inner:before,
+.category-boxes-with-topics .category-box-corner-bar .category-box-inner:before,
+.category-boxes-with-topics .category-box-Random .category-box-inner:before,
+.category-boxes-with-topics .category-box-tips-and-resources .category-box-inner:before,
+.category-boxes-with-topics .category-box-monthly-features .category-box-inner:before,
+.category-boxes-with-topics .category-box-faq-updates .category-box-inner:before,
+.category-boxes-with-topics .category-box-codecademy-pro .category-box-inner:before,
+.category-boxes-with-topics .category-box-project-bug-reporting .category-box-inner:before {
+  background-image: url("https://codecademy-public-assets.s3.amazonaws.com/community/border/93dd676a85e128410aadba06fd95a7df6006832e.svg");
+}
+
+/* MINT */
+.category-boxes .category-box-javascript .category-box-inner:before,
+.category-boxes .category-box-jquery .category-box-inner:before,
+.category-boxes .category-box-angular-js .category-box-inner:before,
+.category-boxes .category-box-express-js .category-box-inner:before,
+.category-boxes .category-box-node-js .category-box-inner:before,
+.category-boxes .category-box-React .category-box-inner:before,
+.category-boxes .category-box-javascript-FAQ .category-box-inner:before,
+.category-boxes .category-box-jQuery-FAQ .category-box-inner:before,
+.category-boxes .category-box-Angular-JS-FAQ .category-box-inner:before,
+.category-boxes .category-box-express-js-FAQ .category-box-inner:before,
+.category-boxes .category-box-Node-JS-FAQ .category-box-inner:before,
+.category-boxes .category-box-React-JS-FAQ .category-box-inner:before,
+.category-boxes-with-topics .category-box-Feature-Course-Requests .category-box-inner:before,
+.category-boxes-with-topics .category-box-featured-challenges .category-box-inner:before,
+.category-boxes-with-topics .category-box-Codecademy-Bug-Reporting .category-box-inner:before,
+.category-boxes-with-topics .category-box-support .category-box-inner:before,
+.category-boxes-with-topics .category-box-30-day-challenge .category-box-inner:before,
+.category-boxes-with-topics .category-box-super-users-lounge .category-box-inner:before,
+.category-boxes-with-topics .category-box-good-users .category-box-inner:before,
+.category-boxes-with-topics .category-box-stock-answers .category-box-inner:before {
+  background-image: url("https://codecademy-public-assets.s3.amazonaws.com/community/border/0f594f7ca67cb853c1b3cb488d0b68b1f81473a4.svg");
+}
+
+/* YELLOW */
+.category-boxes .category-box-Ruby .category-box-inner:before,
+.category-boxes .category-box-rails .category-box-inner:before,
+.category-boxes .category-box-swift .category-box-inner:before,
+.category-boxes .category-box-Ruby-FAQ .category-box-inner:before,
+.category-boxes .category-box-Rails-FAQ .category-box-inner:before,
+.category-boxes .category-box-swift-faq .category-box-inner:before,
+.category-boxes-with-topics .category-box-international .category-box-inner:before,
+.category-boxes-with-topics .category-box-Pro .category-box-inner:before {
+  background-image: url("https://codecademy-public-assets.s3.amazonaws.com/community/border/8f18c04010888b79b3dc95995a74d4b54d088d03.svg");
+}
+
+/* LIGHT BLUE */
+.category-boxes .category-box-c-plus-plus .category-box-inner:before,
+.category-boxes .category-box-c .category-box-inner:before,
+.category-boxes .category-box-java .category-box-inner:before,
+.category-boxes .category-box-php .category-box-inner:before,
+.category-boxes .category-box-r-category .category-box-inner:before,
+.category-boxes .category-box-sql .category-box-inner:before,
+.category-boxes .category-box-go .category-box-inner:before,
+.category-boxes .category-box-c-plus-plus-FAQ .category-box-inner:before,
+.category-boxes .category-box-c-sharp-FAQ .category-box-inner:before,
+.category-boxes .category-box-java-FAQ .category-box-inner:before,
+.category-boxes .category-box-php-FAQ .category-box-inner:before,
+.category-boxes .category-box-r-FAQ .category-box-inner:before,
+.category-boxes .category-box-SQL-FAQ .category-box-inner:before,
+.category-boxes .category-box-Kotlin-FAQ .category-box-inner:before,
+.category-boxes-with-topics .category-box-ask-a-mod .category-box-inner:before,
+.category-boxes-with-topics .category-box-moderators .category-box-inner:before,
+.category-boxes-with-topics .category-box-draggable-interactions-with-jquery-ui .category-box-inner:before,
+.category-boxes-with-topics .category-box-introduction-to-react-native .category-box-inner:before,
+.category-boxes-with-topics .category-box-introduction-to-ruby .category-box-inner:before,
+.category-boxes-with-topics .category-box-analyzing-financial-data-with-python .category-box-inner:before,
+.category-boxes-with-topics .category-box-learn-php-classes-and-objects .category-box-inner:before,
+.category-boxes-with-topics .category-box-kotlin .category-box-inner:before,
+.category-boxes-with-topics .category-box-learn-php-form-validation .category-box-inner:before {
+  background-image: url("https://codecademy-public-assets.s3.amazonaws.com/community/border/f11f7e9c825b8c6cdf268617f910b66b373402b6.svg");
+}
+
+/* OTHER PURPLE */
+.category-boxes .category-box-command-line .category-box-inner:before,
+.category-boxes .category-box-git .category-box-inner:before,
+.category-boxes .category-box-command-line-FAQ .category-box-inner:before,
+.category-boxes .category-box-git-FAQ .category-box-inner:before {
+  background-image: url("https://codecademy-public-assets.s3.amazonaws.com/community/border/b0700454678ed08a63e851e74e4131cc123c1ba4.svg");
+}
+
+/* GREY */
+.category-boxes .category-box-amazon-alexa .category-box-inner:before,
+.category-boxes .category-box-ibm-watson .category-box-inner:before,
+.category-boxes .category-box-amazon-alexa-FAQ .category-box-inner:before,
+.category-boxes .category-box-ibm-watson-FAQ .category-box-inner:before,
+.category-boxes .category-box-uncategorized .category-box-inner:before,
+.category-boxes .category-box-personal-projects .category-box-inner:before,
+.category-boxes .category-box-challenge-projects .category-box-inner:before,
+.category-boxes .category-box-skill-path-projects .category-box-inner:before,
+.category-boxes .category-box-capstone-projects .category-box-inner:before,
+.category-boxes-with-topics .category-box-read-only .category-box-inner:before,
+.category-boxes-with-topics .category-box-meta-beta-testers .category-box-inner:before,
+.category-boxes-with-topics .category-box-teachers .category-box-inner:before {
+  background-image: url("https://codecademy-public-assets.s3.amazonaws.com/community/border/65c932294f85579101aadc6b8b60b4c651596a9d.svg");
+}

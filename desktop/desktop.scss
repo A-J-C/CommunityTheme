@@ -1,0 +1,349 @@
+/* Copyright 2020 - Alex Craig */
+
+
+/********************
+ *   BUTTON STYLES  *
+ ********************/
+
+.custom-header-links li {
+    margin-right: 20px;
+}
+
+.custom-header-links li:last-child {
+    margin-right: 0;
+}
+
+
+/********************
+ *  HEADER STYLING  *
+ ********************/
+ 
+.menu-panel.drop-down,
+.menu-panel.slide-in {
+    top: 60px !important;
+    position: absolute;
+    right: 0;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 0 6px rgba(0,0,0,.16), 0 0 6px rgba(0,0,0,.23), 0 50px 100px rgba(50,50,93,.1), 0 15px 35px rgba(50,50,93,.15), 0 5px 15px rgba(0,0,0,.1);
+}
+
+
+/********************
+ * COMMUNITY BANNER *
+ ********************/
+
+#main-outlet {
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0; 
+}
+
+@media (max-width: 1048px) {
+    #banner #welcome-resources {
+        display: none;
+    }
+}
+
+
+/********************
+ *    MAIN THEME    *
+ ********************/
+
+@import url('https://fonts.googleapis.com/css?family=Oxygen:300,400,700');
+
+@font-face {
+    font-family: 'Oxygen Mono';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Oxygen Mono'), local('OxygenMono-Regular'), url('https://fonts.gstatic.com/s/oxygenmono/v4/BzV4DVOwAgGelLT9EC5xyo4P5ICox8Kq3LLUNMylGO4.woff2') format('woff2');
+}
+
+.topic-avatar .avatar-flair {
+    margin-right: -7px;
+    margin-bottom: -4px;
+}
+
+input {
+    font-family: "Oxygen", Helvetica, Arial, sans-serif;
+}
+
+.cooked code {
+    font-family: 'Oxygen Mono', monospace;
+}
+
+aside.onebox,
+a.mention,
+blockquote,
+aside.quote,
+aside.quote .title,
+.cooked pre,
+.cooked code {
+    background-color: #e6e7e8;
+}
+
+.topic-body,
+.topic-avatar,
+#topic-closing-info,
+hr,
+.mention,
+blockquote,
+.quote,
+aside.onebox,
+.cooked img:not(.emoji),
+.cooked pre {
+    border-color: #bcbec0 !important;
+}
+
+aside.quote,
+blockquote,
+aside.onebox,
+.cooked img:not(.emoji),
+.cooked pre {
+    border-width: 1px;
+    border-style: solid;
+}
+
+aside.quote,
+blockquote,
+aside.onebox {
+    border-left-width: 5px;
+}
+
+aside.quote blockquote {
+    border: none;
+}
+
+.moderator .topic-body {
+    background-color: #e6e7e8;
+}
+
+.cooked a[href] {
+    text-decoration: underline;
+}
+
+/* factoradic, messing with header */
+.d-header .title {
+    max-height: 32px;
+    line-height: 36px;
+}
+
+.d-header {
+    box-shadow: none;
+    border-bottom: 1px solid #E9EAEA;
+    padding-top: 0;
+    height: auto;
+}
+
+/* zeke added `.logo-big` 3/14/17 */
+.d-header #site-logo.logo-big {
+    max-height: 25px;
+    margin: 0 5px 0 0;
+}
+
+#topic-title h1 {
+    line-height: normal;
+}
+
+.extra-info-wrapper .topic-link {
+    line-height: normal;
+    font-size: 15px;
+}
+
+.topic-list .topic-excerpt {
+    color: #7a98a9;
+}
+
+/* factoradic, spacing between topics */
+.topic-list tbody td {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* oduffy, hide subcategories */
+.category-list .subcategories {
+    display: none;
+}
+
+/* O'Duffy nukes forces all the fonts to their lighter form */
+body {
+    font-weight: lighter;
+}
+
+/* oduffy, hide about page stats */
+section.about.stats {
+    display: none;
+}
+
+#banner {
+    width: 100%;
+    background-color: #fff;
+    box-shadow: none;
+    max-height: none;
+    padding-top: 0;
+    padding-bottom: 20px;
+}
+
+#welcome-message {
+    margin-top: 0;
+}
+
+#banner h2 {
+    font-size: 50px;
+    line-height: normal;
+    font-weight: normal;
+}
+
+#welcome-message a:link,
+#welcome-message a:hover,
+#welcome-message a:visited,
+#welcome-message a:active {
+    color: #59A1C9;
+}
+
+#welcome-message a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+    #banner {
+        display: none;
+    }
+}
+
+@media (min-width: 480px) {
+    #welcome-text {
+        float: left;
+        width: 61%;
+        padding-right: 2%;
+        font-weight: lighter;
+    }
+
+    #welcome-resources {
+        float: right;
+        width: 31%;
+        font-weight: lighter;
+    }
+}
+
+@media (min-width: 1200px) {
+    #circle-img-welcome {
+        background-image: url("https://s3.amazonaws.com/codecademy-images/discuss/social-avatar-circle%402x.png");
+        background-size: cover;
+        border: 32px solid #f4f7f8;
+        border-radius: 250px;
+        float: left;
+        margin: 0;
+        position: relative;
+        height: 175px;
+        width: 175px
+    }
+
+    #welcome-message {
+        float: right;
+        width: 74%;
+        margin-top: 15px;
+    }
+}
+
+/* oduffy, make category titles lighter */
+.category-list tbody .category h3 a[href] {
+    font-weight: lighter;
+}
+
+/* oduffy, make user names lighter */
+.names span a {
+    font-weight: lighter;
+}
+
+/* oduffy, make topic name in condensed form lighter (once you scroll down page) */
+.extra-info-wrapper .topic-link {
+    font-weight: lighter;
+}
+
+/* oduffy, trying to make topic title in full form lighter */
+a.fancy-title {
+    font-weight: lighter;
+}
+
+/* oduffy, make category name in topic view lighter */
+.badge-category .clear-badge {
+    font-weight: lighter;
+}
+
+/* oduffy, fix background color */
+body {
+    background-color: white;
+}
+
+/* oduffy, fix oval notification alerts */
+.d-header .icons,
+.badge-notification {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+/* oduffy, light font for on-topic category display */
+.badge-wrapper.bullet span.badge-category {
+    font-weight: lighter;
+}
+
+/* oduffy, fix category description color */
+.category-list td {
+    color: #204056;
+}
+
+/* oduffy, fix category description weight */
+.category-description {
+    font-weight: lighter;
+}
+
+/* Menu Panel */
+.menu-panel.slide-in {
+    max-height: 90vh;
+}
+
+.menu-panel.slide-in .panel-body-contents.clearfix {
+    padding-bottom: 10px;
+}
+
+
+
+/********************
+ *      FOOTER      *
+ ********************/
+
+#list-area {
+    margin-bottom: 50px;
+}
+
+#main > div:first-child {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+
+/********************
+ * NONUNIFORM-WIDTH *
+ ********************/
+ 
+ .wrap {
+  max-width: none;
+}
+
+.wrap>* {
+  max-width: $large-width;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 8px;
+}
+
+.d-header .contents {
+    max-width: 1410px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.d-header>.wrap .contents {
+    padding-left:30px;
+}
