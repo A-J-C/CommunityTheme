@@ -2,9 +2,8 @@
   "name": "Alex and Maciej's Codecademy Community Theme",
   "about_url": "https://github.com/A-J-C/CommunityTheme/blob/master/README.md",
   "license_url": "https://github.com/A-J-C/CommunityTheme/blob/master/LICENSE",
-  "component": false,
   "authors": "Alex, Maciej",
-  "theme_version": 2.0,
+  "theme_version": "2.0",
   "color_schemes": {
     "Community Colour Scheme": {
       "primary": "222222",
