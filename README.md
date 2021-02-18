@@ -1,7 +1,7 @@
 # CommunityTheme
 Codecademy's Main Theme from 2019-2020 now the Alternative Community Theme
 
-Originally developed by @alexc and @factoradic, all copyright permissions are help by them. 
+Originally developed by @alexc and @factoradic, all copyright permissions are held by them. 
 
 # Additionally to the LICENCE
 
