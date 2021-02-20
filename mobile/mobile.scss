@@ -1,10 +1,9 @@
 /* Copyright 2020 - Alex Craig */
 
-
 /********************
  *  HEADER STYLING  *
  ********************/
- 
+
 .d-header .title {
     margin-right: 1rem;
 }
@@ -21,47 +20,10 @@
     width: auto; /* fit-content; if wide logo */
 }
 
-
-/********************
- * COMMUNITY BANNER *
- ********************/
-
-#banner #welcome-text h2 {
-    font-size: 34px;
-    margin: 0;
-    padding: 0;
-    line-height: 1;
-}
-
-#banner #welcome-text, #banner {
-    padding: 0;
-    margin: 0;
-}
-
-#banner #welcome-message {
-    padding: 20px;
-    width: auto !important;
-}
-
-#banner #welcome-message p {
-    margin: 0;
-}
-
-#svgLeft {
-    margin-left: 0;
-    filter: opacity(0.7);
-}
-
-#banner {
-    margin-left: -10px;
-    margin-right: -10px;
-}
-
-
 /********************
  *    MAIN THEME    *
  ********************/
- 
+
 .topic-body {
     margin-left: 0;
     padding: 15px;
@@ -78,11 +40,18 @@
     height: auto;
 }
 
+/* correct padding for header */
+
+#main-outlet {
+    padding-top: 5rem;
+}
+
 .category-header #main-outlet {
     padding-top: 0 !important;
 }
 
-.mobile-view .category-boxes .category-box, .mobile-view .category-boxes-with-topics .category-box {
+.mobile-view .category-boxes .category-box,
+.mobile-view .category-boxes-with-topics .category-box {
     margin-left: 10px;
     margin-right: 10px;
 }
@@ -107,12 +76,11 @@
     width: auto !important;
 }
 
-
 /********************
  *      FOOTER      *
  ********************/
 
-.list-codecademy ul li, .links .list, .list-codecademy span {
+ .list-codecademy ul li, .links .list, .list-codecademy span {
     display: none;
 }
 

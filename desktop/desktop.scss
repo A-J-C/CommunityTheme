@@ -1,6 +1,5 @@
 /* Copyright 2020 - Alex Craig */
 
-
 /********************
  *   BUTTON STYLES  *
  ********************/
@@ -13,11 +12,10 @@
     margin-right: 0;
 }
 
-
 /********************
  *  HEADER STYLING  *
  ********************/
- 
+
 .menu-panel.drop-down,
 .menu-panel.slide-in {
     top: 60px !important;
@@ -25,38 +23,23 @@
     right: 0;
     border: none;
     border-radius: 2px;
-    box-shadow: 0 0 6px rgba(0,0,0,.16), 0 0 6px rgba(0,0,0,.23), 0 50px 100px rgba(50,50,93,.1), 0 15px 35px rgba(50,50,93,.15), 0 5px 15px rgba(0,0,0,.1);
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.16), 0 0 6px rgba(0, 0, 0, 0.23), 0 50px 100px rgba(50, 50, 93, 0.1),
+        0 15px 35px rgba(50, 50, 93, 0.15), 0 5px 15px rgba(0, 0, 0, 0.1);
 }
-
-
-/********************
- * COMMUNITY BANNER *
- ********************/
-
-#main-outlet {
-    padding-left: 0;
-    padding-right: 0;
-    margin: 0; 
-}
-
-@media (max-width: 1048px) {
-    #banner #welcome-resources {
-        display: none;
-    }
-}
-
 
 /********************
  *    MAIN THEME    *
  ********************/
 
-@import url('https://fonts.googleapis.com/css?family=Oxygen:300,400,700');
+@import url("https://fonts.googleapis.com/css?family=Oxygen:300,400,700");
 
 @font-face {
-    font-family: 'Oxygen Mono';
+    font-family: "Oxygen Mono";
     font-style: normal;
     font-weight: 400;
-    src: local('Oxygen Mono'), local('OxygenMono-Regular'), url('https://fonts.gstatic.com/s/oxygenmono/v4/BzV4DVOwAgGelLT9EC5xyo4P5ICox8Kq3LLUNMylGO4.woff2') format('woff2');
+    src: local("Oxygen Mono"), local("OxygenMono-Regular"),
+        url("https://fonts.gstatic.com/s/oxygenmono/v4/BzV4DVOwAgGelLT9EC5xyo4P5ICox8Kq3LLUNMylGO4.woff2")
+            format("woff2");
 }
 
 .topic-avatar .avatar-flair {
@@ -69,7 +52,7 @@ input {
 }
 
 .cooked code {
-    font-family: 'Oxygen Mono', monospace;
+    font-family: "Oxygen Mono", monospace;
 }
 
 aside.onebox,
@@ -114,6 +97,10 @@ aside.quote blockquote {
     border: none;
 }
 
+/*.moderator .topic-body {
+      background-color: #ffe899;
+ }
+  */
 .moderator .topic-body {
     background-color: #e6e7e8;
 }
@@ -122,6 +109,11 @@ aside.quote blockquote {
     text-decoration: underline;
 }
 
+/* factoradic, just for a duration of development */
+/* .alert-too-few-topics {
+     display: none;
+ } */
+
 /* factoradic, messing with header */
 .d-header .title {
     max-height: 32px;
@@ -129,7 +121,10 @@ aside.quote blockquote {
 }
 
 .d-header {
-    height: auto;
+    box-shadow: none;
+    border-bottom: 1px solid #e9eaea;
+    padding-top: 0;
+    height: 3em;
 }
 
 /* zeke added `.logo-big` 3/14/17 */
@@ -173,6 +168,9 @@ section.about.stats {
 }
 
 #banner {
+    width: 100%;
+    background-color: #fff;
+    box-shadow: none;
     max-height: none;
     padding-top: 0;
     padding-bottom: 20px;
@@ -192,7 +190,7 @@ section.about.stats {
 #welcome-message a:hover,
 #welcome-message a:visited,
 #welcome-message a:active {
-    color: #59A1C9;
+    color: #59a1c9;
 }
 
 #welcome-message a:hover {
@@ -230,7 +228,7 @@ section.about.stats {
         margin: 0;
         position: relative;
         height: 175px;
-        width: 175px
+        width: 175px;
     }
 
     #welcome-message {
@@ -300,8 +298,6 @@ body {
     padding-bottom: 10px;
 }
 
-
-
 /********************
  *      FOOTER      *
  ********************/
@@ -311,33 +307,39 @@ body {
 }
 
 #main > div:first-child {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
-
 
 /********************
  * NONUNIFORM-WIDTH *
  ********************/
- 
- .wrap {
-  max-width: none;
+
+.wrap {
+    max-width: none;
 }
 
-.wrap>* {
-  max-width: $large-width;
-  margin-right: auto;
-  margin-left: auto;
-  padding: 0 8px;
+.wrap > * {
+    max-width: $large-width;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 8px;
 }
 
+.d-header .contents {
+    max-width: 1440px;
+    padding-left: 6rem;
+    padding-right: 6rem;
+}
+
+// alex overrides
 .d-header .contents {
     max-width: 1410px;
     padding-left: 0;
     padding-right: 0;
 }
 
-.d-header>.wrap .contents {
-    padding-left:30px;
+.d-header > .wrap .contents {
+    padding-left: 30px;
 }

@@ -3,5 +3,22 @@
   "about_url": "https://github.com/A-J-C/CommunityTheme/blob/master/README.md",
   "license_url": "https://github.com/A-J-C/CommunityTheme/blob/master/LICENSE",
   "authors": "Alex, Maciej",
-  "theme_version": "2.0"
+  "theme_version": "2.0",
+  "assets": {
+    "asset-variable": "assets/background.svg"
+  },
+  "color_schemes": {
+    "cc_community_original": {
+      "primary": "222",
+      "secondary": "FFF",
+      "tertiary": "141C3A",
+      "quaternary": "141C3A",
+      "header_background": "FFF",
+      "header_primary": "333",
+      "highlight": "F1F2F2",
+      "danger": "F4595B",
+      "success": "3069F0",
+      "love": "F4595B"
+    }
+  }
 }
