@@ -1,4 +1,4 @@
-/* Copyright 2020 - Alex Craig */
+/* Copyright 2021 - Alex Craig */
 
 /********************
  *   BUTTON STYLES  *
@@ -6,10 +6,10 @@
 
 .custom-header-links li {
     margin-right: 20px;
-}
 
-.custom-header-links li:last-child {
-    margin-right: 0;
+    &:last-child {
+        margin-right: 0;
+    }
 }
 
 /********************
@@ -18,8 +18,8 @@
 
 .menu-panel.drop-down,
 .menu-panel.slide-in {
-    top: 60px !important;
     position: absolute;
+    top: 60px !important;
     right: 0;
     border: none;
     border-radius: 2px;
@@ -62,7 +62,7 @@ aside.quote,
 aside.quote .title,
 .cooked pre,
 .cooked code {
-    background-color: #e6e7e8;
+    background-color: var(--cc-code-white);
 }
 
 .topic-body,
@@ -123,7 +123,6 @@ aside.quote blockquote {
 .d-header {
     box-shadow: none;
     border-bottom: 1px solid #e9eaea;
-    padding-top: 0;
     height: 3em;
 }
 

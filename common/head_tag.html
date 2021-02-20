@@ -11,25 +11,3 @@ api.reopenWidget("home-logo", {
     }
 });
 </script>
-
-
-<!---------------------
-  - CONDITIONAL PRICE -
-  --------------------->
-  
-<script type="text/discourse-plugin" version="0.8.18">
-$(document).ready(function() {
-  const isLoggedIn = Discourse.User.current();
-  const isProUser = isLoggedIn.groups.some(function(group) {
-    return group.name === "pro_users"
-  });
-  
-  if (isProUser) {
-    $("head").append('<style type="text/css"></style>');
-    var newStyleElement = $("head").children(':last');
-    newStyleElement.html('.pricing{display:none;}');
-  };
-  
-
-})
-</script>

@@ -1,28 +1,5 @@
 <!-- Copyright 2021 - Alex Craig -->
 
-<!-----------------
-  -     BANNER    -
-  ----------------->
-
-<script type="text/javascript">
-  Ember.Router.reopen({
-    UrlChangeEventHandler: function () {
-      Ember.run.schedule('afterRender', this, function () {
-        jQuery('#banner').css("margin-top", 0);
-        jQuery('#main-outlet .container:first-of-type').css("margin-top", 0);
-        if (['/', '/categories', '/latest', '/new', '/unread', '/bookmarks'].indexOf(window.location.pathname) >= 0 || window.location.pathname.split('/')[1] === 'top') {
-          jQuery('#banner').show();
-          jQuery('#banner').css("margin-top", jQuery('.d-header').outerHeight());
-        } else {
-          jQuery('#banner').hide();
-          jQuery('#main-outlet .container:first-of-type:visible').first().css("margin-top", jQuery('.d-header').outerHeight() + 15);
-        }
-      });
-    }.on('didTransition')
-  });
-</script>
-
-
 <!---------------------
   - CONDITIONAL COMPS -
   --------------------->
@@ -42,7 +19,6 @@
 
   function conditionallyHideReplyAndQuoteButtons() {
     var hideReplyAndQuoteButtonsTopics = ['474589', '7188'];
-    // var hideReplyAndQuoteButtonsTopics = [];
 
     var mainOutlet = document.getElementById('main-outlet');
     var topicID = Discourse.__container__.lookup('controller:application').target.currentRoute.parent.params.id;
@@ -56,7 +32,6 @@
   Ember.Router.reopen({
     UrlChangeEventHandler: function () {
       Ember.run.schedule('afterRender', this, function () {
-        // conditionallyShowFooter()
         conditionallyShowBanner();
         conditionallyHideReplyAndQuoteButtons();
       });

@@ -1,12 +1,18 @@
-/* Copyright 2020 - Alex Craig */
+/* Copyright 2021 - Alex Craig */
 
 /********************
  *  HEADER STYLING  *
  ********************/
 
-.d-header .title {
-    margin-right: 1rem;
-}
+.d-header {
+    .title {
+        margin-right: 1rem;
+    }
+
+    #site-logo.logo-big {
+        width: auto; 
+    }
+} 
 
 .d-header-icons .icon,
 .d-header-icons .icon:active,
@@ -14,10 +20,6 @@
 .d-header-icons .icon:focus,
 .drop-down-mode .d-header-icons .active .icon {
     margin: 0 0.1rem 0 0;
-}
-
-.d-header #site-logo.logo-big {
-    width: auto; /* fit-content; if wide logo */
 }
 
 /********************
@@ -33,14 +35,10 @@
     margin-top: 10px;
 }
 
-/* images */
-
 .cooked img:not(.thumbnail) {
     max-width: 100% !important;
     height: auto;
 }
-
-/* correct padding for header */
 
 #main-outlet {
     padding-top: 5rem;
@@ -80,11 +78,15 @@
  *      FOOTER      *
  ********************/
 
- .list-codecademy ul li, .links .list, .list-codecademy span {
+.list-codecademy ul li,
+.links .list,
+.list-codecademy span {
     display: none;
 }
 
-.list-codecademy ul li:first-child, .list-codecademy ul li:last-child, .links .list.list-codecademy {
+.list-codecademy ul li:first-child,
+.list-codecademy ul li:last-child,
+.links .list.list-codecademy {
     display: inherit;
 }
 
