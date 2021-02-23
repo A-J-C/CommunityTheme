@@ -34,12 +34,12 @@ a.mention,
 .cooked code,
 .cooked pre,
 .moderator .topic-body {
-    background-color: var(--cc-off-white);
+    background-color: var(--cc-topic-highlights);
 }
 
 aside.onebox,
 blockquote,
-hr,
+hr,§
 .cooked img:not(.emoji),
 .cooked pre,
 .mention,
@@ -47,7 +47,7 @@ hr,
 .topic-avatar,
 .topic-body,
 #topic-closing-info {
-    border-color: var(--cc-light-grey);
+    border-color: var(--cc-topic-highlights-border);
 }
 
 aside.onebox,
