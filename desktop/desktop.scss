@@ -18,78 +18,66 @@
 
 .menu-panel.drop-down,
 .menu-panel.slide-in {
-    position: absolute;
-    top: 60px !important;
-    right: 0;
     border: none;
     border-radius: 2px;
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.16), 0 0 6px rgba(0, 0, 0, 0.23), 0 50px 100px rgba(50, 50, 93, 0.1),
         0 15px 35px rgba(50, 50, 93, 0.15), 0 5px 15px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    right: 0;
+    top: 60px !important;
 }
 
 /********************
  *    MAIN THEME    *
  ********************/
 
-@import url("https://fonts.googleapis.com/css?family=Oxygen:300,400,700");
+@import url('https://fonts.googleapis.com/css?family=Oxygen:300,400,700');
 
 @font-face {
-    font-family: "Oxygen Mono";
+    font-family: 'Oxygen Mono';
     font-style: normal;
     font-weight: 400;
-    src: local("Oxygen Mono"), local("OxygenMono-Regular"),
-        url("https://fonts.gstatic.com/s/oxygenmono/v4/BzV4DVOwAgGelLT9EC5xyo4P5ICox8Kq3LLUNMylGO4.woff2")
-            format("woff2");
-}
-
-.topic-avatar .avatar-flair {
-    margin-right: -7px;
-    margin-bottom: -4px;
-}
-
-input {
-    font-family: "Oxygen", Helvetica, Arial, sans-serif;
-}
-
-.cooked code {
-    font-family: "Oxygen Mono", monospace;
+    src: local('Oxygen Mono'), local('OxygenMono-Regular'),
+        url('https://fonts.gstatic.com/s/oxygenmono/v4/BzV4DVOwAgGelLT9EC5xyo4P5ICox8Kq3LLUNMylGO4.woff2')
+            format('woff2');
 }
 
 aside.onebox,
-a.mention,
-blockquote,
 aside.quote,
 aside.quote .title,
+blockquote,
+a.mention,
+.cooked code,
 .cooked pre,
-.cooked code {
-    background-color: var(--cc-code-white);
+.moderator .topic-body {
+    background-color: var(--cc-off-white);
 }
 
-.topic-body,
-.topic-avatar,
-#topic-closing-info,
+aside.onebox,
+blockquote,
 hr,
+.cooked img:not(.emoji),
+.cooked pre,
 .mention,
-blockquote,
 .quote,
-aside.onebox,
-.cooked img:not(.emoji),
-.cooked pre {
-    border-color: #bcbec0 !important;
+.topic-avatar,
+.topic-body,
+#topic-closing-info {
+    border-color: var(--cc-light-grey) !important;
 }
 
+aside.onebox,
 aside.quote,
 blockquote,
-aside.onebox,
 .cooked img:not(.emoji),
 .cooked pre {
-    border-width: 1px;
     border-style: solid;
+    border-width: 1px;
 }
 
+aside.onebox,
 aside.quote,
-blockquote,
-aside.onebox {
+blockquote {
     border-left-width: 5px;
 }
 
@@ -97,43 +85,26 @@ aside.quote blockquote {
     border: none;
 }
 
-/*.moderator .topic-body {
-      background-color: #ffe899;
- }
-  */
-.moderator .topic-body {
-    background-color: #e6e7e8;
+body {
+    background-color: var(--cc-white);
+    font-weight: lighter;
+}
+
+input {
+    font-family: 'Oxygen', Helvetica, Arial, sans-serif;
+}
+
+section.about.stats,
+.category-list .subcategories {
+    display: none;
 }
 
 .cooked a[href] {
     text-decoration: underline;
 }
 
-/* factoradic, just for a duration of development */
-/* .alert-too-few-topics {
-     display: none;
- } */
-
-/* factoradic, messing with header */
-.d-header .title {
-    max-height: 32px;
-    line-height: 36px;
-}
-
-.d-header {
-    box-shadow: none;
-    border-bottom: 1px solid #e9eaea;
-    height: 3em;
-}
-
-/* zeke added `.logo-big` 3/14/17 */
-.d-header #site-logo.logo-big {
-    max-height: 25px;
-    margin: 0 5px 0 0;
-}
-
-#topic-title h1 {
-    line-height: normal;
+.cooked code {
+    font-family: 'Oxygen Mono', monospace;
 }
 
 .extra-info-wrapper .topic-link {
@@ -141,160 +112,49 @@ aside.quote blockquote {
     font-size: 15px;
 }
 
-.topic-list .topic-excerpt {
-    color: #7a98a9;
+.topic-avatar .avatar-flair {
+    margin-bottom: -4px;
+    margin-right: -7px;
 }
 
-/* factoradic, spacing between topics */
+.topic-list .topic-excerpt {
+    color: var(--cc-grey);
+}
+
 .topic-list tbody td {
     padding-top: 20px;
     padding-bottom: 20px;
 }
 
-/* oduffy, hide subcategories */
-.category-list .subcategories {
-    display: none;
-}
-
-/* O'Duffy nukes forces all the fonts to their lighter form */
-body {
-    font-weight: lighter;
-}
-
-/* oduffy, hide about page stats */
-section.about.stats {
-    display: none;
-}
-
-#banner {
-    width: 100%;
-    background-color: #fff;
-    box-shadow: none;
-    max-height: none;
-    padding-top: 0;
-    padding-bottom: 20px;
-}
-
-#welcome-message {
-    margin-top: 0;
-}
-
-#banner h2 {
-    font-size: 50px;
+#topic-title h1 {
     line-height: normal;
-    font-weight: normal;
 }
 
-#welcome-message a:link,
-#welcome-message a:hover,
-#welcome-message a:visited,
-#welcome-message a:active {
-    color: #59a1c9;
-}
-
-#welcome-message a:hover {
-    text-decoration: underline;
-}
-
-@media (max-width: 480px) {
-    #banner {
-        display: none;
-    }
-}
-
-@media (min-width: 480px) {
-    #welcome-text {
-        float: left;
-        width: 61%;
-        padding-right: 2%;
-        font-weight: lighter;
-    }
-
-    #welcome-resources {
-        float: right;
-        width: 31%;
-        font-weight: lighter;
-    }
-}
-
-@media (min-width: 1200px) {
-    #circle-img-welcome {
-        background-image: url("https://s3.amazonaws.com/codecademy-images/discuss/social-avatar-circle%402x.png");
-        background-size: cover;
-        border: 32px solid #f4f7f8;
-        border-radius: 250px;
-        float: left;
-        margin: 0;
-        position: relative;
-        height: 175px;
-        width: 175px;
-    }
-
-    #welcome-message {
-        float: right;
-        width: 74%;
-        margin-top: 15px;
-    }
-}
-
-/* oduffy, make category titles lighter */
-.category-list tbody .category h3 a[href] {
-    font-weight: lighter;
-}
-
-/* oduffy, make user names lighter */
+a.fancy-title,
+.badge-category .clear-badge,
+.badge-wrapper.bullet span.badge-category,
+.category-description,
+.category-list tbody .category h3 a[href],
+.extra-info-wrapper .topic-link,
 .names span a {
     font-weight: lighter;
 }
 
-/* oduffy, make topic name in condensed form lighter (once you scroll down page) */
-.extra-info-wrapper .topic-link {
-    font-weight: lighter;
-}
-
-/* oduffy, trying to make topic title in full form lighter */
-a.fancy-title {
-    font-weight: lighter;
-}
-
-/* oduffy, make category name in topic view lighter */
-.badge-category .clear-badge {
-    font-weight: lighter;
-}
-
-/* oduffy, fix background color */
-body {
-    background-color: white;
-}
-
-/* oduffy, fix oval notification alerts */
-.d-header .icons,
-.badge-notification {
+.badge-notification,
+.d-header .icons {
     font-family: Helvetica, Arial, sans-serif;
 }
 
-/* oduffy, light font for on-topic category display */
-.badge-wrapper.bullet span.badge-category {
-    font-weight: lighter;
-}
-
-/* oduffy, fix category description color */
 .category-list td {
-    color: #204056;
+    color: var(--cc-grey-navy);
 }
 
-/* oduffy, fix category description weight */
-.category-description {
-    font-weight: lighter;
-}
-
-/* Menu Panel */
 .menu-panel.slide-in {
     max-height: 90vh;
-}
 
-.menu-panel.slide-in .panel-body-contents.clearfix {
-    padding-bottom: 10px;
+    .panel-body-contents.clearfix {
+        padding-bottom: 10px;
+    }
 }
 
 /********************
@@ -315,24 +175,6 @@ body {
  * NONUNIFORM-WIDTH *
  ********************/
 
-.wrap {
-    max-width: none;
-}
-
-.wrap > * {
-    max-width: $large-width;
-    margin-right: auto;
-    margin-left: auto;
-    padding: 0 8px;
-}
-
-.d-header .contents {
-    max-width: 1440px;
-    padding-left: 6rem;
-    padding-right: 6rem;
-}
-
-// alex overrides
 .d-header .contents {
     max-width: 1410px;
     padding-left: 0;
@@ -341,4 +183,108 @@ body {
 
 .d-header > .wrap .contents {
     padding-left: 30px;
+}
+
+.wrap {
+    max-width: none;
+
+    > * {
+        max-width: $large-width;
+        margin-right: auto;
+        margin-left: auto;
+        padding: 0 8px;
+    }
+}
+
+/********************
+ *  BANNER STYLING  *
+ ********************/
+
+#banner {
+    background-color: var(--cc-white);
+    box-shadow: none;
+    max-height: none;
+    padding-bottom: 20px;
+    padding-top: 0;
+    width: 100%;
+
+    h2 {
+        font-size: 50px;
+        font-weight: normal;
+        line-height: normal;
+    }
+}
+
+.d-header {
+    border-bottom: 1px solid var(--cc-off-white-2);
+    box-shadow: none;
+    height: 3em;
+
+    .title {
+        line-height: 36px;
+        max-height: 32px;
+    }
+
+    #site-logo.logo-big {
+        max-height: 25px;
+        margin: 0 5px 0 0;
+    }
+}
+
+#welcome-message {
+    margin-top: 0;
+
+    a {
+        &:link,
+        &:hover,
+        &:visited,
+        &:active {
+            color: var(--cc-light-blue);
+        }
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    #banner {
+        display: none;
+    }
+}
+
+@media (min-width: 480px) {
+    #welcome-text {
+        float: left;
+        font-weight: lighter;
+        padding-right: 2%;
+        width: 61%;
+    }
+
+    #welcome-resources {
+        float: right;
+        font-weight: lighter;
+        width: 31%;
+    }
+}
+
+@media (min-width: 1200px) {
+    #circle-img-welcome {
+        background-image: url('https://s3.amazonaws.com/codecademy-images/discuss/social-avatar-circle%402x.png');
+        background-size: cover;
+        border: 32px solid #f4f7f8;
+        border-radius: 250px;
+        float: left;
+        height: 175px;
+        margin: 0;
+        position: relative;
+        width: 175px;
+    }
+
+    #welcome-message {
+        float: right;
+        margin-top: 15px;
+        width: 74%;
+    }
 }
