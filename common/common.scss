@@ -9,9 +9,9 @@
     font-display: swap;
     src: url(https://codecademy-discourse.s3.amazonaws.com/discuss/38bfbb2fedcb8d06f52e87fa77aad105.eot);
     src: url(https://codecademy-discourse.s3.amazonaws.com/discuss/8f8fbcc4095c37401c638882bc63b21b.woff2)
-            format("woff2"),
-        url(https://codecademy-discourse.s3.amazonaws.com/discuss/521ab168c92451877ce6712a0db4f5e7.woff) format("woff"),
-        url(https://codecademy-discourse.s3.amazonaws.com/discuss/8e98e9732a7b5fd7012ae3527c43b971.ttf) format("ttf");
+            format('woff2'),
+        url(https://codecademy-discourse.s3.amazonaws.com/discuss/521ab168c92451877ce6712a0db4f5e7.woff) format('woff'),
+        url(https://codecademy-discourse.s3.amazonaws.com/discuss/8e98e9732a7b5fd7012ae3527c43b971.ttf) format('ttf');
     font-weight: 400;
 }
 
@@ -20,9 +20,9 @@
     font-display: swap;
     src: url(https://codecademy-discourse.s3.amazonaws.com/discuss/71748a16292070f9f5e41ae77e10a9f4.eot);
     src: url(https://codecademy-discourse.s3.amazonaws.com/discuss/10c6b3611734c6f586a233d41c1cdf46.woff2)
-            format("woff2"),
-        url(https://codecademy-discourse.s3.amazonaws.com/discuss/e3c2f4d640f19fdbf602b8bb4392f6af.woff) format("woff"),
-        url(https://codecademy-discourse.s3.amazonaws.com/discuss/3ec73bbdc261ff37a3067e4ec8c09c10.ttf) format("ttf");
+            format('woff2'),
+        url(https://codecademy-discourse.s3.amazonaws.com/discuss/e3c2f4d640f19fdbf602b8bb4392f6af.woff) format('woff'),
+        url(https://codecademy-discourse.s3.amazonaws.com/discuss/3ec73bbdc261ff37a3067e4ec8c09c10.ttf) format('ttf');
     font-weight: 700;
 }
 
@@ -31,26 +31,26 @@
     font-display: swap;
     src: url(https://codecademy-discourse.s3.amazonaws.com/discuss/28324c882a2d4c8be68b5f6ce9b39204.eot);
     src: url(https://codecademy-discourse.s3.amazonaws.com/discuss/3861e7bced4765ac7456df8ec72e42d5.woff2)
-            format("woff2"),
-        url(https://codecademy-discourse.s3.amazonaws.com/discuss/565e47e2f3a53ea0244f2e298162bcca.woff) format("woff"),
-        url(https://codecademy-discourse.s3.amazonaws.com/discuss/259392ba68211cadb5d389c1d6bc7123.svg) format("svg");
+            format('woff2'),
+        url(https://codecademy-discourse.s3.amazonaws.com/discuss/565e47e2f3a53ea0244f2e298162bcca.woff) format('woff'),
+        url(https://codecademy-discourse.s3.amazonaws.com/discuss/259392ba68211cadb5d389c1d6bc7123.svg) format('svg');
 }
 
 @font-face {
     font-family: ikona;
     src: url(https://codecademy-discourse.s3.amazonaws.com/discuss/8a35d397f9350b12bab3bb8cc4c0dfdd.eot);
-    src: url(https://codecademy-discourse.s3.amazonaws.com/discuss/1a57406d1a1670dad74ed36e37c3ed13.woff) format("woff"),
+    src: url(https://codecademy-discourse.s3.amazonaws.com/discuss/1a57406d1a1670dad74ed36e37c3ed13.woff) format('woff'),
         url(https://codecademy-discourse.s3.amazonaws.com/discuss/bc6fce1981480ce868cc9e86d506e1c0.ttf)
-            format("truetype");
+            format('truetype');
 }
 
 @font-face {
     font-family: Regular Patch;
     src: url(https://codecademy-discourse.s3.amazonaws.com/discuss/71748a16292070f9f5e41ae77e10a9f4.eot);
     src: url(https://codecademy-discourse.s3.amazonaws.com/discuss/10c6b3611734c6f586a233d41c1cdf46.woff2)
-            format("woff2"),
-        url(https://codecademy-discourse.s3.amazonaws.com/discuss/e3c2f4d640f19fdbf602b8bb4392f6af.woff) format("woff"),
-        url(https://codecademy-discourse.s3.amazonaws.com/discuss/3ec73bbdc261ff37a3067e4ec8c09c10.ttf) format("ttf");
+            format('woff2'),
+        url(https://codecademy-discourse.s3.amazonaws.com/discuss/e3c2f4d640f19fdbf602b8bb4392f6af.woff) format('woff'),
+        url(https://codecademy-discourse.s3.amazonaws.com/discuss/3ec73bbdc261ff37a3067e4ec8c09c10.ttf) format('ttf');
     unicode-range: u+003c, u+003e;
 }
 
@@ -68,7 +68,7 @@ body {
 
 .d-editor-input,
 .ember-text-area {
-    font-family: "Oxygen", Helvetica, Arial, sans-serif !important;
+    font-family: 'Oxygen', Helvetica, Arial, sans-serif !important;
 }
 
 strong {
@@ -548,16 +548,16 @@ th.latest {
 }
 
 /* category header banner */
-div[class^="category-title-header"] {
+div[class^='category-title-header'] {
     font-size: 17px;
 }
 
-div[class^="category-title-header"] img {
+div[class^='category-title-header'] img {
     padding-left: 0 !important;
     margin-left: -51px;
 }
 
-div[class^="category-title-header"] {
+div[class^='category-title-header'] {
     padding-top: 0 !important;
 }
 
@@ -572,7 +572,7 @@ div[class^="category-title-header"] {
         box-sizing: border-box;
     }
 
-    div[class^="category-title-header"] img {
+    div[class^='category-title-header'] img {
         display: none;
     }
 }
@@ -618,7 +618,8 @@ div[class^="category-title-header"] {
     background: none;
 }
 
-.hide-reply-quote button.widget-button.reply, .hide-reply-quote .quote-button {
+.hide-reply-quote button.widget-button.reply,
+.hide-reply-quote .quote-button {
     display: none;
 }
 
@@ -626,136 +627,136 @@ div[class^="category-title-header"] {
  *       FOOTER      *
  ********************/
 
-@import "common/foundation/variables";
+@import 'common/foundation/variables';
 
 .custom-footer {
-  border-top: 1px solid #e9e9e9;
-  display: flex;
-  flex-wrap: wrap;
-  background: $secondary;
-  .flexbox {
-    width: 100%;
+    border-top: 1px solid #e9e9e9;
     display: flex;
     flex-wrap: wrap;
-    color: #646464;
-    padding: 1.5rem 0 0.75rem 0;
-    font-size: 1rem;
-  }
-  .second-box {
-    flex: 1;
-    .links {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      ul {
-        list-style: none;
-        margin: 0;
-      }
-      li {
-        margin: 0.5em 0;
-      }
-      .subheader {
-          color: #646464;
-          font-weight: 700;
-          font-size: 0.875rem;
-      }
-    }
-  }
-  .third-box {
-    align-items: center;
-    border-top: 1px solid #e9e9e9;
-    padding-top: 0.75rem;
-    display: flex;
-    width: 100%;
-    .small-link {
-      color: #08c;
-      margin: 0 0.25em;
-    }
-    .copyright {
-      text-align: right;
-    }
-  }
-  .footer-links {
-    flex: 1;
-    min-width: 165px;
-    .divider {
-        font-size: 1.1rem;
-    }
-  }
-  .footer-section-link-wrapper a {
-    color: #3E3E40;
-    &:hover {
-        color: #4B77E0;
-    }
-  }
-  .list {
-    margin: 1em;
-    margin-top: 0;
-    span {
-      color: #000;
-      font-size: 1rem;
-    }
-    .social {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: flex-start;
-      .social-link {
-        margin-right: .5em;
+    background: $secondary;
+    .flexbox {
+        width: 100%;
         display: flex;
-        align-items: center;
-        justify-content: center;
-
-        i {
-          color: $secondary;
-          min-width: unset;
-          margin: 0;
-          font-size: $font-up-2;
-          opacity: 1;
+        flex-wrap: wrap;
+        color: #646464;
+        padding: 1.5rem 0 0.75rem 0;
+        font-size: 1rem;
+    }
+    .second-box {
+        flex: 1;
+        .links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            ul {
+                list-style: none;
+                margin: 0;
+            }
+            li {
+                margin: 0.5em 0;
+            }
+            .subheader {
+                color: #646464;
+                font-weight: 700;
+                font-size: 0.875rem;
+            }
         }
-      }
     }
-  }
-  .list-codecademy {
-    flex: 1;
-  }
-  .list-resources {
-    flex: 1;
-  }
-  .list-catalog {
-    flex: 1;
-  }    
-  .list-languages {
-    display: flex;
-    justify-content: space-around;
-    flex: 2;
-  }
-  .list-catalog2 {
-    order: 4;
-    // flex: 4;
-  }    
-  .list-catalog3 {
-    order: 5;
-    // flex: 2;
-  }
-  .d-icon {
-    color: #3e3e40;
-    margin-right: 5px;
-    opacity: 0.7;
-    min-width: 20px;
-    min-height: 20px;
-    text-align: center;
-    &.fa-none {
-      min-width: unset;
+    .third-box {
+        align-items: center;
+        border-top: 1px solid #e9e9e9;
+        padding-top: 0.75rem;
+        display: flex;
+        width: 100%;
+        .small-link {
+            color: #08c;
+            margin: 0 0.25em;
+        }
+        .copyright {
+            text-align: right;
+        }
     }
-    .rtl & {
-      margin-right: 0;
-      margin-left: 5px;
+    .footer-links {
+        flex: 1;
+        min-width: 165px;
+        .divider {
+            font-size: 1.1rem;
+        }
     }
-  }
-  .hide-opacity {
-      opacity: 0;
-  }
+    .footer-section-link-wrapper a {
+        color: #3e3e40;
+        &:hover {
+            color: #4b77e0;
+        }
+    }
+    .list {
+        margin: 1em;
+        margin-top: 0;
+        span {
+            color: #000;
+            font-size: 1rem;
+        }
+        .social {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: flex-start;
+            .social-link {
+                margin-right: 0.5em;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                i {
+                    color: $secondary;
+                    min-width: unset;
+                    margin: 0;
+                    font-size: $font-up-2;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    .list-codecademy {
+        flex: 1;
+    }
+    .list-resources {
+        flex: 1;
+    }
+    .list-catalog {
+        flex: 1;
+    }
+    .list-languages {
+        display: flex;
+        justify-content: space-around;
+        flex: 2;
+    }
+    .list-catalog2 {
+        order: 4;
+        // flex: 4;
+    }
+    .list-catalog3 {
+        order: 5;
+        // flex: 2;
+    }
+    .d-icon {
+        color: #3e3e40;
+        margin-right: 5px;
+        opacity: 0.7;
+        min-width: 20px;
+        min-height: 20px;
+        text-align: center;
+        &.fa-none {
+            min-width: unset;
+        }
+        .rtl & {
+            margin-right: 0;
+            margin-left: 5px;
+        }
+    }
+    .hide-opacity {
+        opacity: 0;
+    }
 }
 
 // sticky footer
@@ -766,81 +767,79 @@ div[class^="category-title-header"] {
 // }
 
 #main-outlet {
-  flex: 1 0 auto;
-//   max-width: calc(100% - 16px);
-//   width: $large-width;
+    flex: 1 0 auto;
+    //   max-width: calc(100% - 16px);
+    //   width: $large-width;
 }
 
 @media screen and (max-width: 1120px) {
-  .custom-footer {
-    .first-box {
-      max-width: 100%;
-      border-bottom: 1px solid rgba($primary-low, 0.05);
-      margin-bottom: 1em;
-      padding-bottom: 1em;
+    .custom-footer {
+        .first-box {
+            max-width: 100%;
+            border-bottom: 1px solid rgba($primary-low, 0.05);
+            margin-bottom: 1em;
+            padding-bottom: 1em;
 
-      .blurb {
-        display: flex;
-        align-items: center;
-      }
+            .blurb {
+                display: flex;
+                align-items: center;
+            }
+        }
+        .third-box {
+            margin-top: 0.5em;
+        }
+        .second-box .links {
+            //   justify-content: space-between;
+        }
+        .list {
+            margin: 0;
+        }
     }
-    .third-box {
-      margin-top: 0.5em;
-    }
-    .second-box .links {
-    //   justify-content: space-between;
-    }
-    .list {
-      margin: 0;
-    }
-  }
 }
 
 @media screen and (max-width: 660px) {
-  .custom-footer {
-    .first-box {
-      width: 100%;
+    .custom-footer {
+        .first-box {
+            width: 100%;
+        }
+        .list {
+            margin-top: 1em;
+            display: inline-block;
+            vertical-align: top;
+        }
+        .links {
+            display: inline-block;
+        }
+        .list-codecademy {
+            order: 1;
+            min-width: 50%;
+        }
+        .list-resources {
+            order: 2;
+            min-width: 50%;
+        }
+        .list-catalog {
+            order: 3;
+            flex: 6;
+            min-width: 50%;
+        }
+        .list-languages {
+            margin-top: 0;
+            order: 4;
+            flex: 6;
+            display: flex;
+            justify-content: space-between;
+            min-width: 50%;
+        }
+        .list-catalog2 {
+            order: 4;
+            flex: 4;
+        }
+        .list-catalog3 {
+            order: 5;
+            flex: 2;
+        }
     }
-    .list {
-      margin-top: 1em;
-      display: inline-block;
-      vertical-align: top;
-    }
-    .links {
-      display: inline-block;
-    }
-    .list-codecademy {
-        order: 1;
-        min-width: 50%;
-    }
-    .list-resources {
-        order: 2;
-        min-width: 50%;
-    }
-    .list-catalog {
-        order: 3;
-        flex: 6;
-        min-width: 50%;
-
-    }    
-    .list-languages {
-        margin-top: 0;
-        order: 4;
-        flex: 6;
-        display: flex;
-        justify-content: space-between;
-        min-width: 50%;
-
-    }
-    .list-catalog2 {
-        order: 4;
-        flex: 4;
-    }    
-    .list-catalog3 {
-        order: 5;
-        flex: 2;
-    }
-  }
 }
 
 /********************
@@ -848,7 +847,7 @@ div[class^="category-title-header"] {
  ********************/
 
 a.fancy-title,
-body, 
+body,
 .badge-category .clear-badge,
 .badge-wrapper.bullet span.badge-category,
 .category-description,
@@ -871,8 +870,8 @@ a.mention,
 
 aside.onebox,
 blockquote,
-hr,§
-.cooked img:not(.emoji),
+hr,
+§ .cooked img:not(.emoji),
 .cooked pre,
 .mention,
 .quote,
@@ -927,7 +926,7 @@ section.about.stats,
  *  BANNER STYLING  *
  ********************/
 
- #banner {
+#banner {
     max-height: none;
 
     h2 {
