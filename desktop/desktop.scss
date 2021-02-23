@@ -26,99 +26,14 @@
  *    MAIN THEME    *
  ********************/
 
-aside.onebox,
-aside.quote,
-aside.quote .title,
-blockquote,
-a.mention,
-.cooked code,
-.cooked pre,
-.moderator .topic-body {
-    background-color: var(--cc-topic-highlights);
-}
-
-aside.onebox,
-blockquote,
-hr,§
-.cooked img:not(.emoji),
-.cooked pre,
-.mention,
-.quote,
-.topic-avatar,
-.topic-body,
-#topic-closing-info {
-    border-color: var(--cc-topic-highlights-border);
-}
-
-aside.onebox,
-aside.quote,
-blockquote,
-.cooked img:not(.emoji),
-.cooked pre {
-    border-style: solid;
-    border-width: 1px;
-}
-
-aside.onebox,
-aside.quote,
-blockquote {
-    border-left-width: 5px;
-}
-
-aside.quote blockquote {
-    border: none;
-}
-
-section.about.stats,
-.category-list .subcategories {
-    display: none;
-}
-
-.cooked a[href] {
-    text-decoration: underline;
-}
-
-.extra-info-wrapper .topic-link {
-    line-height: normal;
-    font-size: 15px;
-}
-
 .topic-avatar .avatar-flair {
     margin-bottom: -4px;
     margin-right: -7px;
 }
 
-.topic-list .topic-excerpt {
-    color: var(--cc-grey);
-}
-
 .topic-list tbody td {
     padding-top: 20px;
     padding-bottom: 20px;
-}
-
-#topic-title h1 {
-    line-height: normal;
-}
-
-a.fancy-title,
-body, 
-.badge-category .clear-badge,
-.badge-wrapper.bullet span.badge-category,
-.category-description,
-.category-list tbody .category h3 a[href],
-.extra-info-wrapper .topic-link,
-.names span a {
-    font-weight: lighter;
-}
-
-.badge-notification,
-.d-header .icons {
-    font-family: Helvetica, Arial, sans-serif;
-}
-
-.category-list td {
-    color: var(--cc-grey-navy);
 }
 
 .menu-panel.slide-in {
@@ -173,7 +88,7 @@ body,
  ********************/
 
 #banner {
-    background-color: var(--cc-white);
+    background-color: var(--cc-background);
     box-shadow: none;
     max-height: none;
     padding-bottom: 20px;
@@ -209,7 +124,7 @@ body,
         &:hover,
         &:visited,
         &:active {
-            color: var(--cc-light-blue);
+            color: var(--cc-link);
         }
 
         &:hover {
