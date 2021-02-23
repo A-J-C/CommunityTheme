@@ -22,6 +22,48 @@
     top: 60px !important;
 }
 
+.d-header {
+    height: 3em;
+
+    #site-logo.logo-big {
+        max-height: 25px;
+    }
+}
+
+/********************
+ * NONUNIFORM-WIDTH *
+ ********************/
+
+.d-header .contents {
+    max-width: 1410px;
+    padding: 0;
+}
+
+.d-header > .wrap .contents {
+    padding-left: 30px;
+}
+
+.wrap {
+    max-width: none;
+
+    > * {
+        max-width: $large-width;
+        margin-right: auto;
+        margin-left: auto;
+        padding: 0 8px;
+    }
+}
+
+/********************
+ *  BANNER STYLING  *
+ ********************/
+
+@media (max-width: 480px) {
+    #banner {
+        display: none;
+    }
+}
+
 /********************
  *    MAIN THEME    *
  ********************/
@@ -49,127 +91,9 @@
  ********************/
 
 #list-area {
-    margin-bottom: 50px;
+    margin-bottom: 0;
 }
 
 #main > div:first-child {
-    display: flex;
-    flex-direction: column;
     min-height: 100vh;
-}
-
-/********************
- * NONUNIFORM-WIDTH *
- ********************/
-
-.d-header .contents {
-    max-width: 1410px;
-    padding-left: 0;
-    padding-right: 0;
-}
-
-.d-header > .wrap .contents {
-    padding-left: 30px;
-}
-
-.wrap {
-    max-width: none;
-
-    > * {
-        max-width: $large-width;
-        margin-right: auto;
-        margin-left: auto;
-        padding: 0 8px;
-    }
-}
-
-/********************
- *  BANNER STYLING  *
- ********************/
-
-#banner {
-    background-color: var(--cc-background);
-    box-shadow: none;
-    max-height: none;
-    padding-bottom: 20px;
-    padding-top: 0;
-    width: 100%;
-
-    h2 {
-        font-size: 50px;
-        font-weight: normal;
-        line-height: normal;
-    }
-}
-
-.d-header {
-    height: 3em;
-
-    .title {
-        line-height: 36px;
-        max-height: 32px;
-    }
-
-    #site-logo.logo-big {
-        max-height: 25px;
-        margin: 0 5px 0 0;
-    }
-}
-
-#welcome-message {
-    margin-top: 0;
-
-    a {
-        &:link,
-        &:hover,
-        &:visited,
-        &:active {
-            color: var(--cc-link);
-        }
-
-        &:hover {
-            text-decoration: underline;
-        }
-    }
-}
-
-@media (max-width: 480px) {
-    #banner {
-        display: none;
-    }
-}
-
-@media (min-width: 480px) {
-    #welcome-text {
-        float: left;
-        font-weight: lighter;
-        padding-right: 2%;
-        width: 61%;
-    }
-
-    #welcome-resources {
-        float: right;
-        font-weight: lighter;
-        width: 31%;
-    }
-}
-
-@media (min-width: 1200px) {
-    #circle-img-welcome {
-        background-image: url('https://s3.amazonaws.com/codecademy-images/discuss/social-avatar-circle%402x.png');
-        background-size: cover;
-        border: 32px solid #f4f7f8;
-        border-radius: 250px;
-        float: left;
-        height: 175px;
-        margin: 0;
-        position: relative;
-        width: 175px;
-    }
-
-    #welcome-message {
-        float: right;
-        margin-top: 15px;
-        width: 74%;
-    }
 }
