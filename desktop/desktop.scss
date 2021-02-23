@@ -6,10 +6,6 @@
 
 .custom-header-links li {
     margin-right: 20px;
-
-    &:last-child {
-        margin-right: 0;
-    }
 }
 
 /********************
@@ -23,24 +19,12 @@
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.16), 0 0 6px rgba(0, 0, 0, 0.23), 0 50px 100px rgba(50, 50, 93, 0.1),
         0 15px 35px rgba(50, 50, 93, 0.15), 0 5px 15px rgba(0, 0, 0, 0.1);
     position: absolute;
-    right: 0;
     top: 60px !important;
 }
 
 /********************
  *    MAIN THEME    *
  ********************/
-
-@import url('https://fonts.googleapis.com/css?family=Oxygen:300,400,700');
-
-@font-face {
-    font-family: 'Oxygen Mono';
-    font-style: normal;
-    font-weight: 400;
-    src: local('Oxygen Mono'), local('OxygenMono-Regular'),
-        url('https://fonts.gstatic.com/s/oxygenmono/v4/BzV4DVOwAgGelLT9EC5xyo4P5ICox8Kq3LLUNMylGO4.woff2')
-            format('woff2');
-}
 
 aside.onebox,
 aside.quote,
@@ -63,7 +47,7 @@ hr,
 .topic-avatar,
 .topic-body,
 #topic-closing-info {
-    border-color: var(--cc-light-grey) !important;
+    border-color: var(--cc-light-grey);
 }
 
 aside.onebox,
@@ -85,15 +69,6 @@ aside.quote blockquote {
     border: none;
 }
 
-body {
-    background-color: var(--cc-white);
-    font-weight: lighter;
-}
-
-input {
-    font-family: 'Oxygen', Helvetica, Arial, sans-serif;
-}
-
 section.about.stats,
 .category-list .subcategories {
     display: none;
@@ -101,10 +76,6 @@ section.about.stats,
 
 .cooked a[href] {
     text-decoration: underline;
-}
-
-.cooked code {
-    font-family: 'Oxygen Mono', monospace;
 }
 
 .extra-info-wrapper .topic-link {
@@ -131,6 +102,7 @@ section.about.stats,
 }
 
 a.fancy-title,
+body, 
 .badge-category .clear-badge,
 .badge-wrapper.bullet span.badge-category,
 .category-description,
@@ -216,8 +188,6 @@ a.fancy-title,
 }
 
 .d-header {
-    border-bottom: 1px solid var(--cc-off-white-2);
-    box-shadow: none;
     height: 3em;
 
     .title {
