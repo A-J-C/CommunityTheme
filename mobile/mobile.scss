@@ -4,16 +4,6 @@
  *  HEADER STYLING  *
  ********************/
 
-.d-header {
-    .title {
-        margin-right: 1rem;
-    }
-
-    #site-logo.logo-big {
-        width: auto;
-    }
-}
-
 .d-header-icons .icon,
 .d-header-icons .icon:active,
 .d-header-icons .icon:focus,
@@ -26,29 +16,33 @@
  *    MAIN THEME    *
  ********************/
 
-.cooked img:not(.thumbnail) {
+.cooked img:not(.thumbnail),
+.cooked img:not(.thumbnail):not(.ytp-thumbnail-image) {
     height: auto;
-    max-width: 100% !important;
-}
-
-.category-topic-link.ember-view .num.posts .topic-post-badges {
-    position: absolute;
-    right: 5px;
+    max-width: 100%;
 }
 
 .category-list-item {
     margin-bottom: 0;
 }
 
-.category-topic-link td.main-link {
-    width: 90%;
-}
+.category-topic-link {
+    td.main-link {
+        width: 90%;
+    }
 
-.category-topic-link td.num.posts {
-    position: absolute;
-    right: 2px;
-    text-align: right;
-    width: auto !important;
+    td.num.posts {
+        position: absolute;
+        right: 2px;
+        text-align: right;
+        width: auto;
+    }
+
+    // is this needed?
+    &.ember-view .num.posts .topic-post-badges {
+        position: absolute;
+        right: 5px;
+    }
 }
 
 .mobile-view .category-boxes .category-box,
@@ -66,19 +60,15 @@
     padding: 15px;
 }
 
-#main-outlet {
-    padding-top: 5rem;
-
-    .category-header & {
-        padding-top: 0 !important;
-    }
+.category-header #main-outlet.wrap {
+    padding-top: 0;
 }
 
 /********************
  *      FOOTER      *
  ********************/
 
- .custom-footer .flexbox {
+.custom-footer .flexbox {
     padding-top: 0;
 }
 
