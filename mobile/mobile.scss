@@ -68,18 +68,16 @@
  *      FOOTER      *
  ********************/
 
-.custom-footer .flexbox {
-    padding-top: 0;
-}
+.custom-footer {
+    .flexbox {
+        padding-top: 0;
+    }
+    .links {
+        display: none;
+    }
 
-.links .list,
-.list-codecademy span,
-.list-codecademy ul li {
-    display: none;
-}
-
-.list-codecademy ul li:first-child,
-.list-codecademy ul li:last-child,
-.links .list.list-codecademy {
-    display: inherit;
+    .third-box {
+        border-top: none;
+        margin-top: 0;
+    }
 }
