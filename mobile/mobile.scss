@@ -10,14 +10,14 @@
     }
 
     #site-logo.logo-big {
-        width: auto; 
+        width: auto;
     }
-} 
+}
 
 .d-header-icons .icon,
 .d-header-icons .icon:active,
-.d-header-icons .icon:hover,
 .d-header-icons .icon:focus,
+.d-header-icons .icon:hover,
 .drop-down-mode .d-header-icons .active .icon {
     margin: 0 0.1rem 0 0;
 }
@@ -26,37 +26,14 @@
  *    MAIN THEME    *
  ********************/
 
-.topic-body {
-    margin-left: 0;
-    padding: 15px;
-}
-
-.topic-avatar {
-    margin-top: 10px;
-}
-
 .cooked img:not(.thumbnail) {
-    max-width: 100% !important;
     height: auto;
-}
-
-#main-outlet {
-    padding-top: 5rem;
-}
-
-.category-header #main-outlet {
-    padding-top: 0 !important;
-}
-
-.mobile-view .category-boxes .category-box,
-.mobile-view .category-boxes-with-topics .category-box {
-    margin-left: 10px;
-    margin-right: 10px;
+    max-width: 100% !important;
 }
 
 .category-topic-link.ember-view .num.posts .topic-post-badges {
-    right: 5px;
     position: absolute;
+    right: 5px;
 }
 
 .category-list-item {
@@ -68,19 +45,46 @@
 }
 
 .category-topic-link td.num.posts {
-    text-align: right;
     position: absolute;
     right: 2px;
+    text-align: right;
     width: auto !important;
+}
+
+.mobile-view .category-boxes .category-box,
+.mobile-view .category-boxes-with-topics .category-box {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.topic-avatar {
+    margin-top: 10px;
+}
+
+.topic-body {
+    margin-left: 0;
+    padding: 15px;
+}
+
+#main-outlet {
+    padding-top: 5rem;
+
+    .category-header & {
+        padding-top: 0 !important;
+    }
 }
 
 /********************
  *      FOOTER      *
  ********************/
 
-.list-codecademy ul li,
+ .custom-footer .flexbox {
+    padding-top: 0;
+}
+
 .links .list,
-.list-codecademy span {
+.list-codecademy span,
+.list-codecademy ul li {
     display: none;
 }
 
@@ -88,8 +92,4 @@
 .list-codecademy ul li:last-child,
 .links .list.list-codecademy {
     display: inherit;
-}
-
-.custom-footer .flexbox {
-    padding-top: 0;
 }

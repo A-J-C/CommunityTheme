@@ -921,28 +921,3 @@ section.about.stats,
 .topic-list .topic-excerpt {
     color: var(--cc-description);
 }
-
-/********************
- *  BANNER STYLING  *
- ********************/
-
-#banner {
-    max-height: none;
-
-    h2 {
-        line-height: normal;
-    }
-}
-
-#welcome-message a {
-    &:link,
-    &:hover,
-    &:visited,
-    &:active {
-        color: var(--cc-link);
-    }
-
-    &:hover {
-        text-decoration: underline;
-    }
-}
