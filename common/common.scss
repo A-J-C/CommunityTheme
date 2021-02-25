@@ -75,7 +75,7 @@ body {
 .custom-header-links .headerLink a:focus,
 #site-logo:focus {
     border-radius: 2px;
-    box-shadow: 0 0 0 2px var(--secondary§), 0 0 0 4px var(--cc-custom-links-border);
+    box-shadow: 0 0 0 2px var(--secondary), 0 0 0 4px var(--cc-custom-links-border);
     outline: none;
 }
 
@@ -92,56 +92,94 @@ body {
     padding: 0.65rem 0;
 
     .d-header-icons .d-icon,
+    .header-buttons .custom-header-links .headerLink a {
+        color: var(--primary-medium);
+    }
+
+    .d-header-icons .d-icon,
     .d-header-icons .icon,
     .d-header-icons .icon:active,
     .d-header-icons .icon:focus,
     .d-header-icons .icon:hover,
     .drop-down-mode .d-header-icons .active .icon {
         border: none;
+        background: none;
         border-radius: 2px;
         margin: 0 2rem 0 0;
         padding: 0.2rem;
     }
 
+    .d-header-icons .icon:active .d-icon,
     .d-header-icons .icon:focus .d-icon,
-    .d-header-icons .icon:active .d-icon {
-        box-shadow: 0 0 0 2px #fff, 0 0 0 4px #141c3a;
-    }
-
-    .drop-down-mode .d-header-icons .active .icon .d-icon {
-        color: #141c3a;
-        box-shadow: 0 0 0 2px #fff, 0 0 0 4px #141c3a;
-    }
-
-    .d-header-icons .d-icon,
-    .header-buttons .custom-header-links .headerLink a {
-        color: var(--primary-medium) !important;
-    }
-
-    .header-buttons .custom-header-links .headerLink a {
-        color: #141c3a;
-        font-size: 16px;
-        font-weight: 400;
-    }
-
+    .d-header-icons .icon:hover .d-icon,
     .d-header-icons .d-icon:hover,
     .d-header-icons .d-icon:focus,
     .d-header-icons .d-icon:active,
-    .header-buttons .custom-header-links .headerLink a:hover {
-        color: var(--primary) !important;
-    }
-
-    .d-header-icons .icon:hover .d-icon {
-        box-shadow: 0 0 0 2px #fff, 0 0 0 4px #141c3a;
+    .header-buttons .custom-header-links .headerLink a:hover,
+    .drop-down-mode .d-header-icons .active .icon .d-icon {
+        box-shadow: 0 0 0 2px var(--secondary), 0 0 0 4px var(--tertiary);
+        color: var(--primary);
     }
 
     .custom-header-links .headerLink a:hover {
-        border-radius: 2px;
-        box-shadow: 0 0 0 2px #fff, 0 0 0 4px #141c3a;
         outline: none;
     }
 }
 
+// .d-header {
+//     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+//     padding: 0.65rem 0;
+
+//     .d-header-icons .d-icon,
+//     .d-header-icons .icon,
+//     .d-header-icons .icon:active,
+//     .d-header-icons .icon:focus,
+//     .d-header-icons .icon:hover,
+//     .drop-down-mode .d-header-icons .active .icon {
+//         border: none;
+//         border-radius: 2px;
+//         margin: 0 2rem 0 0;
+//         padding: 0.2rem;
+//     }
+
+//     .d-header-icons .icon:focus .d-icon,
+//     .d-header-icons .icon:active .d-icon {
+//         box-shadow: 0 0 0 2px #fff, 0 0 0 4px #141c3a;
+//     }
+
+//     .drop-down-mode .d-header-icons .active .icon .d-icon {
+//         color: #141c3a;
+//         box-shadow: 0 0 0 2px #fff, 0 0 0 4px #141c3a;
+//     }
+
+//     .d-header-icons .d-icon,
+//     .header-buttons .custom-header-links .headerLink a {
+//         color: var(--primary-medium) !important;
+//     }
+
+//     .header-buttons .custom-header-links .headerLink a {
+//         color: #141c3a;
+//         font-size: 16px;
+//         font-weight: 400;
+//     }
+
+//     .d-header-icons .d-icon:hover,
+//     .d-header-icons .d-icon:focus,
+//     .d-header-icons .d-icon:active,
+//     .header-buttons .custom-header-links .headerLink a:hover {
+//         color: var(--primary) !important;
+//     }
+
+//     .d-header-icons .icon:hover .d-icon {
+//         box-shadow: 0 0 0 2px #fff, 0 0 0 4px #141c3a;
+//     }
+
+//     .custom-header-links .headerLink a:hover {
+//         border-radius: 2px;
+//         box-shadow: 0 0 0 2px #fff, 0 0 0 4px #141c3a;
+//         outline: none;
+//     }
+// }
 // .discourse-no-touch .d-header-icons .icon:hover,
 // .discourse-no-touch .d-header-icons .icon:focus {
 //     border: none;
@@ -160,7 +198,7 @@ body {
  *    MAIN THEME    *
  ********************/
 
- a.fancy-title,
+a.fancy-title,
 body,
 .badge-category .clear-badge,
 .badge-wrapper.bullet span.badge-category,
