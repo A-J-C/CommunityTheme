@@ -144,18 +144,15 @@ body {
     .d-header-icons .icon:active .d-icon,
     .d-header-icons .icon:focus .d-icon,
     .d-header-icons .icon:hover .d-icon,
-    .custom-header-links .headerLink a:hover,
-    .drop-down-mode .d-header-icons .active .icon .d-icon {
+    .d-header-icons .d-icon:active,
+    .d-header-icons .d-icon:focus,
+    .d-header-icons .d-icon:hover,
+    .drop-down-mode .d-header-icons .active .icon .d-icon
+    .header-buttons .custom-header-links .headerLink a:hover {
         border-radius: 2px;
         box-shadow: 0 0 0 2px var(--secondary), 0 0 0 4px var(--tertiary);
-        outline: none;
-    }
-
-    .d-header-icons .d-icon:hover,
-    .d-header-icons .d-icon:focus,
-    .d-header-icons .d-icon:active,
-    .header-buttons .custom-header-links .headerLink a:hover {
         color: var(--primary) !important;
+        outline: none;
     }
 }
 
