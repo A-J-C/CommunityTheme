@@ -7,23 +7,23 @@
 @font-face {
     font-family: Nunito Sans;
     font-display: swap;
+    font-weight: 400;
     src: url(https://codecademy-discourse.s3.amazonaws.com/discuss/38bfbb2fedcb8d06f52e87fa77aad105.eot);
     src: url(https://codecademy-discourse.s3.amazonaws.com/discuss/8f8fbcc4095c37401c638882bc63b21b.woff2)
             format('woff2'),
         url(https://codecademy-discourse.s3.amazonaws.com/discuss/521ab168c92451877ce6712a0db4f5e7.woff) format('woff'),
         url(https://codecademy-discourse.s3.amazonaws.com/discuss/8e98e9732a7b5fd7012ae3527c43b971.ttf) format('ttf');
-    font-weight: 400;
 }
 
 @font-face {
     font-family: Nunito Sans;
     font-display: swap;
+    font-weight: 700;
     src: url(https://codecademy-discourse.s3.amazonaws.com/discuss/71748a16292070f9f5e41ae77e10a9f4.eot);
     src: url(https://codecademy-discourse.s3.amazonaws.com/discuss/10c6b3611734c6f586a233d41c1cdf46.woff2)
             format('woff2'),
         url(https://codecademy-discourse.s3.amazonaws.com/discuss/e3c2f4d640f19fdbf602b8bb4392f6af.woff) format('woff'),
         url(https://codecademy-discourse.s3.amazonaws.com/discuss/3ec73bbdc261ff37a3067e4ec8c09c10.ttf) format('ttf');
-    font-weight: 700;
 }
 
 @font-face {
@@ -37,14 +37,6 @@
 }
 
 @font-face {
-    font-family: ikona;
-    src: url(https://codecademy-discourse.s3.amazonaws.com/discuss/8a35d397f9350b12bab3bb8cc4c0dfdd.eot);
-    src: url(https://codecademy-discourse.s3.amazonaws.com/discuss/1a57406d1a1670dad74ed36e37c3ed13.woff) format('woff'),
-        url(https://codecademy-discourse.s3.amazonaws.com/discuss/bc6fce1981480ce868cc9e86d506e1c0.ttf)
-            format('truetype');
-}
-
-@font-face {
     font-family: Regular Patch;
     src: url(https://codecademy-discourse.s3.amazonaws.com/discuss/71748a16292070f9f5e41ae77e10a9f4.eot);
     src: url(https://codecademy-discourse.s3.amazonaws.com/discuss/10c6b3611734c6f586a233d41c1cdf46.woff2)
@@ -52,6 +44,11 @@
         url(https://codecademy-discourse.s3.amazonaws.com/discuss/e3c2f4d640f19fdbf602b8bb4392f6af.woff) format('woff'),
         url(https://codecademy-discourse.s3.amazonaws.com/discuss/3ec73bbdc261ff37a3067e4ec8c09c10.ttf) format('ttf');
     unicode-range: u+003c, u+003e;
+}
+
+.d-editor-input,
+.ember-text-area {
+    font-family: 'Oxygen', Helvetica, Arial, sans-serif;
 }
 
 #banner #welcome-text,
@@ -66,49 +63,18 @@ body {
         Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
-.d-editor-input,
-.ember-text-area {
-    font-family: 'Oxygen', Helvetica, Arial, sans-serif !important;
-}
-
-strong {
-    font-weight: bold;
-}
-
 /********************
  *   BUTTON STYLES  *
  ********************/
 
-.login-button {
-    background-color: $quaternary;
-    border-color: transparent;
-    border-radius: 2px;
-}
-
-.panel > .header-buttons > .login-button:hover {
-    background-color: $quaternary;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-}
-
-.login-button:active {
-    background-color: #5000b6;
-}
-
-.panel > .header-buttons > .login-button:focus {
-    background-color: $quaternary;
-    box-shadow: 0 0 0 2px #fff, 0 0 0 4px $quaternary;
-    outline: none;
-}
-
 .custom-header-links .headerLink a:focus,
 #site-logo:focus {
     border-radius: 2px;
-    box-shadow: 0 0 0 2px #fff, 0 0 0 4px #141c3a;
+    box-shadow: 0 0 0 2px var(--secondary§), 0 0 0 4px var(--cc-custom-links-border);
     outline: none;
 }
 
 #site-logo {
-    border-radius: 2px;
     padding: 6px 16px;
 }
 
