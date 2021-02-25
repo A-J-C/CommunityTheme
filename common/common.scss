@@ -72,13 +72,6 @@ body {
  *   BUTTON STYLES  *
  ********************/
 
-.custom-header-links .headerLink a:focus,
-#site-logo:focus {
-    border-radius: 2px;
-    box-shadow: 0 0 0 2px var(--secondary), 0 0 0 4px var(--cc-custom-links-border);
-    outline: none;
-}
-
 #site-logo {
     padding: 6px 16px;
 }
@@ -86,37 +79,6 @@ body {
 /********************
  *  HEADER STYLING  *
  ********************/
-
-// .d-header {
-//     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
-//     padding: 0.65rem 0;
-
-//     .d-header-icons .d-icon,
-//     .d-header-icons .icon,
-//     .header-buttons .custom-header-links .headerLink a {
-//         border: none;
-//         background: none;
-//         color: var(--primary-medium);
-//         margin: 0 2rem 0 0;
-//         padding: 0.2rem;
-//     }
-
-//     .d-header-icons .d-icon:active,
-//     .d-header-icons .d-icon:focus,
-//     .d-header-icons .d-icon:hover,
-//     .d-header-icons .icon:active .d-icon,
-//     .d-header-icons .icon:focus .d-icon,
-//     .d-header-icons .icon:hover .d-icon,
-//     .header-buttons .custom-header-links .headerLink a:active,
-//     .header-buttons .custom-header-links .headerLink a:focus,
-//     .header-buttons .custom-header-links .headerLink a:hover {
-//         border: none;
-//         background: none;
-//         border-radius: 2px;
-//         box-shadow: 0 0 0 2px var(--secondary), 0 0 0 4px var(--tertiary);
-//         color: var(--primary);
-//     }
-// }
 
 .d-header {
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
@@ -135,8 +97,6 @@ body {
     .d-header-icons .icon:hover,
     .drop-down-mode .d-header-icons .active .icon {
         border: none;
-        background: none;
-        border-radius: 2px;
         margin: 0 2rem 0 0;
         padding: 0.2rem;
     }
@@ -147,8 +107,11 @@ body {
     .d-header-icons .d-icon:active,
     .d-header-icons .d-icon:focus,
     .d-header-icons .d-icon:hover,
-    .drop-down-mode .d-header-icons .active .icon .d-icon
-    .header-buttons .custom-header-links .headerLink a:hover {
+    .drop-down-mode .d-header-icons .active .icon .d-icon,
+    .header-buttons .custom-header-links .headerLink a:active,
+    .header-buttons .custom-header-links .headerLink a:focus,
+    .header-buttons .custom-header-links .headerLink a:hover,
+    #site-logo:focus {
         border-radius: 2px;
         box-shadow: 0 0 0 2px var(--secondary), 0 0 0 4px var(--tertiary);
         color: var(--primary) !important;
