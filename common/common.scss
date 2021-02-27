@@ -156,7 +156,7 @@ body,
     .header-buttons .custom-header-links .headerLink a:hover,
     #site-logo:focus {
         border-radius: 2px;
-        box-shadow: 0 0 0 2px var(--secondary), 0 0 0 4px var(--tertiary);
+        box-shadow: 0 0 0 2px var(--secondary), 0 0 0 4px var(--cc-custom-links-border);
         color: var(--primary) !important;
         outline: none;
     }
@@ -239,7 +239,7 @@ a.mention:hover {
 
 tr,
 .latest-topic-list-item {
-    border-bottom: 4px solid var(--primary-low);
+    border-bottom: 4px solid var(--cc-body-background);
 }
 
 /* move little blue dot */
