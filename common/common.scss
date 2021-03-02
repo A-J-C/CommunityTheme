@@ -253,7 +253,7 @@ a.mention:hover {
     color: var(--cc-link-colour-hover);
 }
 
-.cooked a[href] {
+.cooked a[href], #welcome-message a:hover {
     text-decoration: underline;
 }
 
