@@ -185,6 +185,30 @@ body {
     background: var(--cc-body-background);
 }
 
+.admin-content,
+.boxed.white,
+.category-box-inner,
+.custom-footer,
+.category-list,
+.latest-topic-list,
+.reviewable-item,
+.suggested-topics table,
+.topic-list,
+.topic-body,
+.user-main,
+.user-info.small,
+.user-content,
+.user-main .about.collapsed-info .details,
+.user-main .about .details,
+.user-main .staff-counters,
+.user-main .user-content,
+.user-stream .item,
+.user-stream .user-stream-item,
+.user-info.medium,
+#reply-control {
+    background-color: var(----header_background);
+}
+
 .modal-backdrop {
     background: var(--cc-modal-background);
 }
