@@ -16,6 +16,10 @@
  *    MAIN THEME    *
  ********************/
 
+ .category-header #main-outlet.wrap {
+    padding-top: 0;
+}
+
 .cooked img:not(.thumbnail),
 .cooked img:not(.thumbnail):not(.ytp-thumbnail-image) {
     height: auto;
@@ -64,8 +68,8 @@
     padding: 15px;
 }
 
-.category-header #main-outlet.wrap {
-    padding-top: 0;
+#main-outlet {
+    padding-bottom: 10px;
 }
 
 /********************
