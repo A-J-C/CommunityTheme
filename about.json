@@ -4,7 +4,24 @@
   "license_url": "https://github.com/A-J-C/CommunityTheme/blob/master/LICENSE",
   "authors": "Alex, Maciej",
   "theme_version": "2.0",
-  "assets": {},
+  "assets": {
+    "nunito-sans-eot": "assets/nunito-sans-eot.eot",
+    "nunito-sans-ttf": "assets/nunito-sans-ttf.ttf",
+    "nunito-sans-woff": "assets/nunito-sans-woff.woff",
+    "nunito-sans-woff2": "assets/nunito-sans-woff2.woff2",
+    "nunito-sans-bold-eot": "assets/nunito-sans-bold-eot.eot",
+    "nunito-sans-bold-ttf": "assets/nunito-sans-bold-ttf.ttf",
+    "nunito-sans-bold-woff": "assets/nunito-sans-bold-woff.woff",
+    "nunito-sans-bold-woff2": "assets/nunito-sans-bold-woff2.woff2",
+    "regular-bold-eot": "assets/regular-bold-eot.eot",
+    "regular-bold-svg": "assets/regular-bold-svg.svg",
+    "regular-bold-woff": "assets/regular-bold-woff.woff",
+    "regular-bold-woff2": "assets/regular-bold-woff2.woff2",
+    "regular-patch-eot": "assets/regular-patch-eot.eot",
+    "regular-patch-ttf": "assets/regular-patch-ttf.ttf",
+    "regular-patch-woff": "assets/regular-patch-woff.woff",
+    "regular-patch-woff2": "assets/regular-patch-woff2.woff2"
+  },
   "color_schemes": {
     "cc_community_original": {
       "primary": "222",
