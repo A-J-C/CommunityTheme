@@ -8,41 +8,37 @@
     font-family: Nunito Sans;
     font-display: swap;
     font-weight: 400;
-    src: url(https://codecademy-discourse.s3.amazonaws.com/discuss/38bfbb2fedcb8d06f52e87fa77aad105.eot);
-    src: url(https://codecademy-discourse.s3.amazonaws.com/discuss/8f8fbcc4095c37401c638882bc63b21b.woff2)
-            format('woff2'),
-        url(https://codecademy-discourse.s3.amazonaws.com/discuss/521ab168c92451877ce6712a0db4f5e7.woff) format('woff'),
-        url(https://codecademy-discourse.s3.amazonaws.com/discuss/8e98e9732a7b5fd7012ae3527c43b971.ttf) format('ttf');
+    src: url($nunito-sans-eot);
+    src: url($nunito-sans-woff2) format('woff2'),
+        url($nunito-sans-woff) format('woff'),
+        url($nunito-sans-ttf) format('ttf');
 }
 
 @font-face {
     font-family: Nunito Sans;
     font-display: swap;
     font-weight: 700;
-    src: url(https://codecademy-discourse.s3.amazonaws.com/discuss/71748a16292070f9f5e41ae77e10a9f4.eot);
-    src: url(https://codecademy-discourse.s3.amazonaws.com/discuss/10c6b3611734c6f586a233d41c1cdf46.woff2)
-            format('woff2'),
-        url(https://codecademy-discourse.s3.amazonaws.com/discuss/e3c2f4d640f19fdbf602b8bb4392f6af.woff) format('woff'),
-        url(https://codecademy-discourse.s3.amazonaws.com/discuss/3ec73bbdc261ff37a3067e4ec8c09c10.ttf) format('ttf');
+    src: url($nunito-sans-bold-eot);
+    src: url($nunito-sans-bold-woff2) format('woff2'),
+        url($nunito-sans-bold-woff) format('woff'),
+        url($nunito-sans-bold-ttf) format('ttf');
 }
 
 @font-face {
     font-family: Regular Bold;
     font-display: swap;
-    src: url(https://codecademy-discourse.s3.amazonaws.com/discuss/28324c882a2d4c8be68b5f6ce9b39204.eot);
-    src: url(https://codecademy-discourse.s3.amazonaws.com/discuss/3861e7bced4765ac7456df8ec72e42d5.woff2)
-            format('woff2'),
-        url(https://codecademy-discourse.s3.amazonaws.com/discuss/565e47e2f3a53ea0244f2e298162bcca.woff) format('woff'),
-        url(https://codecademy-discourse.s3.amazonaws.com/discuss/259392ba68211cadb5d389c1d6bc7123.svg) format('svg');
+    src: url($regular-bold-eot);
+    src: url($regular-bold-woff2) format('woff2'),
+        url($regular-bold-woff) format('woff'),
+        url($regular-bold-svg) format('svg');
 }
 
 @font-face {
     font-family: Regular Patch;
-    src: url(https://codecademy-discourse.s3.amazonaws.com/discuss/71748a16292070f9f5e41ae77e10a9f4.eot);
-    src: url(https://codecademy-discourse.s3.amazonaws.com/discuss/10c6b3611734c6f586a233d41c1cdf46.woff2)
-            format('woff2'),
-        url(https://codecademy-discourse.s3.amazonaws.com/discuss/e3c2f4d640f19fdbf602b8bb4392f6af.woff) format('woff'),
-        url(https://codecademy-discourse.s3.amazonaws.com/discuss/3ec73bbdc261ff37a3067e4ec8c09c10.ttf) format('ttf');
+    src: url($regular-patch-eot);
+    src: url($regular-patch-woff2) format('woff2'),
+        url($regular-patch-woff) format('woff'),
+        url($regular-patch-ttf) format('ttf');
     unicode-range: u+003c, u+003e;
 }
 
