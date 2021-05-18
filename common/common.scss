@@ -68,6 +68,14 @@ body,
         Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
+#welcome-message a:link,
+#welcome-message a:hover,
+#welcome-message a:visited,
+#welcome-message a:active,
+.arrow-svg {
+    color: var(--cc-link-colour-banner);
+}
+
 /********************
  *   BUTTON STYLES  *
  ********************/
