@@ -489,12 +489,12 @@ aside.quote .title {
     }
 
     .archetype-private_message & .cooked {
-        border: none;
+        border: none !important;
         background: none !important;
     }
 
     .archetype-private_message & .cooked, & .cooked {
-        padding-top: 0;
+        padding-top: 5px;
     }
 }
 
