@@ -480,12 +480,21 @@ aside.quote .title {
     box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.15);
     margin-bottom: 20px;
     margin-left: -45px;
-    padding-left: 55px;
+    padding-left: 60px;
     padding-right: 15px;
 
     /* make tables user's post look normal */
     tr {
         border-bottom: 1px solid var(--primary-low);
+    }
+
+    .archetype-private_message & .cooked {
+        border: none;
+        background: none !important;
+    }
+
+    .archetype-private_message & .cooked, & .cooked {
+        padding-top: 0;
     }
 }
 
