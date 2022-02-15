@@ -56,11 +56,16 @@
 }
 
 .topic-list th, .topic-list td {
-    padding: 7px 5px;
+    padding: 7px 5px !important;
 }
 
 .topic-avatar {
     margin-top: 10px;
+    margin-bottom: 5px !important;
+
+    .post-avatar {
+        padding-bottom: 10px;
+    }
 }
 
 .topic-body {
