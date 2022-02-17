@@ -21,6 +21,8 @@
     </div>
   
     <h3 class="suggested-topics-message">{{{browseMoreMessage}}}</h3>
+    
+    {{plugin-outlet name="below-suggested-topics" tagName="span" connectorTagName="div" args=(hash topic=topic)}}
   </script>
 
   <!-----------------
