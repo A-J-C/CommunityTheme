@@ -90,7 +90,7 @@
   
       div.innerHTML = `<textarea id="raw-text" readonly spellcheck="false" style="width: 100%; height: 100%; background: var(--secondary-very-high); cursor: text;" class="d-editor-input ember-text-area ember-view"></textarea>`;
       div.querySelector('#raw-text').onclick = (event) => event.stopPropagation();
-      document.getElementById('share-link').after(div);
+      document.getElementById('topic-bottom').after(div);
       return div;
     };
   
